@@ -2,42 +2,32 @@ name: Actualizar agenda de concertos
 
 on:
   schedule:
-    # Corre todos os dias às 07:00 UTC (08:00 Lisboa, hora de verão)
     - cron: "0 7 * * *"
   workflow_dispatch:
-    # Permite correr manualmente no separador Actions do GitHub
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do repositório
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Instalar Python
+      - name: Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Instalar dependências
+      - name: Dependencias
         run: pip install requests beautifulsoup4
 
-      - name: Correr scraper
+      - name: Scraper
         run: python scrape.py
 
-      - name: Verificar se events.json foi actualizado
-        run: |
-          echo "=== Primeiras linhas do events.json ==="
-          head -20 events.json
-          echo "=== Total de eventos ==="
-          python3 -c "import json; d=json.load(open('events.json')); print(f'{d[\"total\"]} eventos')"
-
-      - name: Commit e push do events.json
+      - name: Commit
         run: |
           git config user.name "Porto Ao Vivo Bot"
           git config user.email "bot@mizuca.github.io"
           git add events.json
-          # Só faz commit se houver alterações
-          git diff --cached --quiet || git commit -m "chore: actualizar agenda $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git diff --cached --quiet || git commit -m "agenda $(date -u +'%Y-%m-%d')"
           git push
