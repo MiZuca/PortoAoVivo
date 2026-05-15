@@ -9,8 +9,8 @@ import re
 import time
 from datetime import datetime, date, timezone
 
-import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 # ─── Venues ──────────────────────────────────────────────────────────────────
 VENUES = {
@@ -37,21 +37,8 @@ VENUES = {
         "url": "https://www.agenda-porto.pt/en/local/rivoli-theatre/",
         "capacity": 150,
         "color": "#34d399",
-        "title_filter": "understage",  # só eventos com "understage" no título
+        "title_filter": "understage",
     },
-}
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Referer": "https://www.agenda-porto.pt/",
-    "DNT": "1",
 }
 
 MONTHS = {
@@ -63,16 +50,36 @@ MONTHS = {
 }
 
 
+_playwright = None
+_browser = None
+
+def get_browser():
+    global _playwright, _browser
+    if _browser is None:
+        _playwright = sync_playwright().start()
+        _browser = _playwright.chromium.launch(headless=True)
+    return _browser
+
 def fetch(url, retries=3):
     for attempt in range(retries):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=20)
-            r.raise_for_status()
-            return r.text
-        except requests.RequestException as e:
-            print(f"  Tentativa {attempt+1}/{retries} falhou: {e}")
-            if attempt < retries - 1:
-                time.sleep(2 ** attempt)
+            browser = get_browser()
+            page = browser.new_page()
+            page.set_extra_http_headers({
+                "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
+            })
+            page.goto(url, wait_until="networkidle", timeout=30000)
+            # Aguarda que apareçam links de eventos
+            try:
+                page.wait_for_selector('a[href*="/evento/"]', timeout=10000)
+            except Exception:
+                pass  # Pode não ter eventos — não é erro
+            html = page.content()
+            page.close()
+            return html
+        except Exception as e:
+            print(f"  Tentativa {attempt+1}/3 falhou: {e}")
+            time.sleep(2)
     return None
 
 
@@ -97,19 +104,80 @@ def scrape_venue(venue_id, info):
     if not html:
         print("  ERRO: pagina inacessivel")
         return []
-    
-    # DEBUG: mostra primeiros links de evento encontrados
+
     soup = BeautifulSoup(html, "html.parser")
-    links = soup.find_all("a", href=re.compile(r"/evento/"))
-    print(f"  Links de evento encontrados: {len(links)}")
-    if links:
-        print(f"  Exemplo de link: {links[0]}")
-        print(f"  Classes no link: {links[0].get('class')}")
-        # Mostra todas as classes dentro do primeiro link
-        for el in links[0].find_all(True):
-            if el.get('class'):
-                print(f"    tag={el.name} class={el.get('class')} text={el.get_text(strip=True)[:50]}")
-    return []
+    events = []
+
+    for link in soup.find_all("a", href=re.compile(r"^/en/evento/")):
+        title_el = (
+            link.find(class_=re.compile(r"event-?title", re.I))
+            or link.find("h2")
+            or link.find("h3")
+        )
+        if not title_el:
+            texts = [t.strip() for t in link.stripped_strings if len(t.strip()) > 3]
+            title_text = texts[0] if texts else ""
+        else:
+            title_text = title_el.get_text(strip=True)
+
+        if not title_text:
+            continue
+
+        sub_el = link.find(class_=re.compile(r"event-?sub", re.I))
+        subtitle = sub_el.get_text(strip=True) if sub_el else ""
+
+        day_el = link.find(class_=re.compile(r"\bday\b", re.I))
+        month_el = link.find(class_=re.compile(r"\bmonth\b", re.I))
+        date_iso = parse_date(
+            day_el.get_text(strip=True) if day_el else "",
+            month_el.get_text(strip=True) if month_el else "",
+        )
+
+        hour_el = link.find(class_=re.compile(r"\bhour\b", re.I))
+        time_str = hour_el.get_text(strip=True) if hour_el else None
+
+        section_el = link.find(class_=re.compile(r"section-?name", re.I))
+        format_el = link.find(class_=re.compile(r"format-?name", re.I))
+        section = section_el.get_text(strip=True) if section_el else ""
+        fmt = format_el.get_text(strip=True) if format_el else ""
+
+        s = section.lower()
+        f = fmt.lower()
+        is_music = (
+            "music" in s or "clubbing" in s or "musica" in s
+            or f in {"concert", "party", "show", "listening", "dj set", "concerto", "festa"}
+            or any(k in f for k in ("concert", "party", "dj", "listen"))
+        )
+        if not is_music:
+            continue
+
+        if not date_iso:
+            continue
+
+        # Filtro por título (ex: Understage dentro do Rivoli)
+        title_filter = info.get("title_filter")
+        if title_filter and title_filter.lower() not in title_text.lower():
+            continue
+
+        slug = link["href"].split("/evento/")[-1].strip("/")
+        ev_id = re.sub(r"[^a-z0-9-]", "", slug)
+
+        events.append({
+            "id": ev_id,
+            "title": title_text,
+            "subtitle": subtitle,
+            "venue_id": venue_id,
+            "venue": info["name"],
+            "venue_capacity": info["capacity"],
+            "date": date_iso,
+            "time": time_str,
+            "type": fmt,
+            "url": "https://www.agenda-porto.pt" + link["href"],
+            "intimate": info["capacity"] <= 200,
+        })
+
+    print(f"  {len(events)} eventos de musica encontrados")
+    return events
 
 
 def main():
@@ -149,6 +217,13 @@ def main():
 
     print(f"\nTotal: {len(unique)} eventos guardados em events.json")
     print(f"Actualizado em: {output['updated_at']}")
+
+    # Fecha o browser
+    global _browser, _playwright
+    if _browser:
+        _browser.close()
+    if _playwright:
+        _playwright.stop()
 
 
 if __name__ == "__main__":
