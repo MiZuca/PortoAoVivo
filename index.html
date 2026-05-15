@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Porto Ao Vivo">
+<meta name="description" content="Concertos nos espaços íntimos do Porto">
+<title>Porto Ao Vivo</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg2: #111111;
+    --bg3: #1a1a1a;
+    --bg4: #222222;
+    --accent: #e8ff47;
+    --accent2: #ff6b35;
+    --text: #f0f0f0;
+    --text2: #888;
+    --text3: #555;
+    --border: #2a2a2a;
+    --radius: 14px;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 10px;
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text);
+  }
+
+  .logo span {
+    color: var(--accent);
+  }
+
+  .header-meta {
+    font-size: 12px;
+    color: var(--text3);
+    font-weight: 300;
+  }
+
+  /* FILTER BAR */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    padding: 10px 0 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .filter-bar::-webkit-scrollbar { display: none; }
+
+  .filter-chip {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text2);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .filter-chip:active { transform: scale(0.95); }
+
+  .filter-chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #0a0a0a;
+    font-weight: 500;
+  }
+
+  .filter-chip.venue-chip.active {
+    background: var(--accent2);
+    border-color: var(--accent2);
+    color: #fff;
+  }
+
+  /* SECTION TABS */
+  .section-tabs {
+    display: flex;
+    gap: 0;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 113px;
+    z-index: 99;
+  }
+
+  .section-tab {
+    padding: 12px 20px 11px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text3);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+  }
+
+  .section-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* MAIN CONTENT */
+  main {
+    padding: 20px 20px 100px;
+  }
+
+  /* DATE GROUP */
+  .date-group { margin-bottom: 28px; }
+
+  .date-label {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 12px;
+  }
+
+  .date-label span {
+    background: var(--bg3);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  /* EVENT CARD */
+  .event-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .event-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--card-color, var(--border));
+    border-radius: 2px 0 0 2px;
+  }
+
+  .event-card:active { transform: scale(0.98); background: var(--bg3); }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .event-title {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    flex: 1;
+  }
+
+  .event-time {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    white-space: nowrap;
+    font-family: var(--font-display);
+  }
+
+  .card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .venue-badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 100px;
+    background: var(--bg4);
+    color: var(--text2);
+    border: 1px solid var(--border);
+  }
+
+  .genre-badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 100px;
+    color: var(--badge-text, #0a0a0a);
+    background: var(--badge-bg, var(--accent));
+  }
+
+  .price-badge {
+    font-size: 11px;
+    color: var(--text3);
+    margin-left: auto;
+    font-weight: 300;
+  }
+
+  .event-desc {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.55;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+
+  /* INTIMATE INDICATOR */
+  .intimate-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: var(--accent2);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  .intimate-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent2);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* VENUE CARDS */
+  .venue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .venue-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .venue-card:active { transform: scale(0.97); }
+
+  .venue-card-name {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .venue-card-cap {
+    font-size: 12px;
+    color: var(--text3);
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .venue-card-count {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+    font-family: var(--font-display);
+  }
+
+  .venue-color-bar {
+    height: 3px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+  }
+
+  /* EMPTY STATE */
+  .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text3);
+  }
+
+  .empty-icon { font-size: 40px; margin-bottom: 12px; }
+  .empty-title { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: var(--text2); margin-bottom: 6px; }
+  .empty-sub { font-size: 14px; font-weight: 300; }
+
+  /* BOTTOM NAV */
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border);
+    display: flex;
+    padding: 8px 0 max(8px, env(safe-area-inset-bottom));
+    z-index: 200;
+  }
+
+  .nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 0;
+    cursor: pointer;
+    color: var(--text3);
+    transition: color 0.15s;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-family: var(--font-display);
+  }
+
+  .nav-item.active { color: var(--accent); }
+  .nav-item svg { width: 22px; height: 22px; stroke-width: 1.8; }
+
+  /* DETAIL OVERLAY */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    z-index: 300;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+
+  .overlay.open { opacity: 1; pointer-events: all; }
+
+  .detail-sheet {
+    background: var(--bg2);
+    border-radius: 20px 20px 0 0;
+    border-top: 1px solid var(--border);
+    padding: 0 24px 40px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .overlay.open .detail-sheet { transform: translateY(0); }
+
+  .sheet-handle {
+    width: 36px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 12px auto 20px;
+  }
+
+  .sheet-title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .sheet-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .sheet-desc {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text2);
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  .sheet-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+  }
+
+  .sheet-info-label { color: var(--text3); font-weight: 300; }
+  .sheet-info-val { color: var(--text); font-weight: 500; }
+
+  .sheet-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: var(--accent);
+    color: #0a0a0a;
+    border: none;
+    border-radius: var(--radius);
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 24px;
+    letter-spacing: 0.02em;
+    transition: transform 0.1s;
+  }
+
+  .sheet-btn:active { transform: scale(0.97); }
+
+  /* INSTALL BANNER */
+  .install-banner {
+    margin: 0 0 16px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .install-banner-text { flex: 1; }
+  .install-banner-title { font-family: var(--font-display); font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+  .install-banner-sub { font-size: 12px; color: var(--text3); font-weight: 300; }
+  .install-btn-small { padding: 8px 14px; background: var(--accent); color: #0a0a0a; border: none; border-radius: 8px; font-family: var(--font-display); font-size: 12px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+
+  .hidden { display: none !important; }
+
+  /* Stats bar */
+  .stats-bar {
+    display: flex;
+    gap: 16px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .stats-bar::-webkit-scrollbar { display: none; }
+
+  .stat-item { text-align: center; flex-shrink: 0; }
+  .stat-num { font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--accent); }
+  .stat-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo">Porto<span>.</span>Ao<span>Vivo</span></div>
+    <div class="header-meta" id="last-update">↻ dados de exemplo</div>
+  </div>
+  <div class="filter-bar" id="genre-filters">
+    <button class="filter-chip active" data-genre="all">Todos</button>
+  </div>
+</header>
+
+<div class="stats-bar" id="stats-bar"></div>
+
+<div style="display:flex; gap:0; padding: 0 20px; border-bottom: 1px solid var(--border); background: var(--bg); position:sticky; top:113px; z-index:99;">
+  <div class="section-tab active" data-tab="agenda" onclick="switchTab('agenda')">Agenda</div>
+  <div class="section-tab" data-tab="venues" onclick="switchTab('venues')">Espaços</div>
+</div>
+
+<main id="main-content">
+  <div id="install-banner-container"></div>
+  <div id="agenda-view"></div>
+  <div id="venues-view" class="hidden"></div>
+</main>
+
+<nav>
+  <div class="nav-item active" onclick="switchTab('agenda')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    Agenda
+  </div>
+  <div class="nav-item" onclick="switchTab('venues')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Espaços
+  </div>
+</nav>
+
+<div class="overlay" id="overlay" onclick="closeDetail(event)">
+  <div class="detail-sheet" id="detail-sheet">
+    <div class="sheet-handle"></div>
+    <div id="sheet-content"></div>
+  </div>
+</div>
+
+<script>
+const VENUES = {
+  'maus-habitos': { name: 'Maus Hábitos', cap: '~150 pessoas', color: '#e8ff47', short: 'MH', url: 'https://maushabitos.com' },
+  'rca': { name: 'RCA Club', cap: '~200 pessoas', color: '#ff6b35', short: 'RC', url: 'https://rcaclub.pt' },
+  'hard-club': { name: 'Hard Club', cap: '~200 pessoas', color: '#a78bfa', short: 'HC', url: 'https://hard-club.com' },
+  'understage': { name: 'Understage Rivoli', cap: '~150 pessoas', color: '#34d399', short: 'UR', url: 'https://teatrorivoli.pt' }
+};
+
+const GENRE_COLORS = {
+  'Indie': { bg: '#e8ff47', text: '#0a0a0a' },
+  'Rock': { bg: '#ff6b35', text: '#fff' },
+  'Electrónica': { bg: '#a78bfa', text: '#fff' },
+  'Jazz': { bg: '#fbbf24', text: '#0a0a0a' },
+  'Experimental': { bg: '#f472b6', text: '#fff' },
+  'Hip-hop': { bg: '#34d399', text: '#0a0a0a' },
+  'Folk': { bg: '#fb923c', text: '#fff' },
+  'Metal': { bg: '#f87171', text: '#fff' },
+  'Soul': { bg: '#fbbf24', text: '#0a0a0a' },
+  'Punk': { bg: '#f87171', text: '#fff' },
+  'Noise': { bg: '#818cf8', text: '#fff' },
+  'Ambient': { bg: '#67e8f9', text: '#0a0a0a' },
+  'Pop': { bg: '#f9a8d4', text: '#0a0a0a' }
+};
+
+function getToday() {
+  const d = new Date();
+  d.setHours(0,0,0,0);
+  return d;
+}
+
+function addDays(date, n) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + n);
+  return d;
+}
+
+function fmtDate(d) {
+  return d.toISOString().split('T')[0];
+}
+
+const today = getToday();
+
+const EVENTS = [
+  { id:1, title:'Capitão Fausto', venue:'maus-habitos', genre:'Indie', date: fmtDate(today), time:'22:00', price:'€12', desc:'Uma das bandas mais importantes do indie português regressam ao Maus Hábitos para uma noite de pop psicodélica e letras inteligentes.', intimate:true },
+  { id:2, title:'Dino d\'Santiago', venue:'rca', genre:'Soul', date: fmtDate(today), time:'23:00', price:'€15', desc:'O artista lisboeta mistura funaná com R&B contemporâneo num espectáculo que une Cabo Verde e a modernidade urbana.', intimate:true },
+  { id:3, title:'Surma', venue:'understage', genre:'Folk', date: fmtDate(addDays(today,1)), time:'21:30', price:'€10', desc:'Voz única que cruza o folk português com sonoridades celtas e mediterrâneas. Um concerto de silêncio e presença absoluta.', intimate:true },
+  { id:4, title:'Rodrigo Leão', venue:'hard-club', genre:'Ambient', date: fmtDate(addDays(today,1)), time:'21:00', price:'€18', desc:'O membro fundador dos Madredeus apresenta o seu mais recente trabalho de música cinematic para piano e orquestra de câmara.', intimate:false },
+  { id:5, title:'ELYSIA', venue:'rca', genre:'Electrónica', date: fmtDate(addDays(today,2)), time:'23:30', price:'€8', desc:'Noite de techno e electrónica experimental com a DJ portuense ELYSIA, conhecida pelos seus sets de 4h que desafiam os limites do trance.', intimate:true },
+  { id:6, title:'Black Mamba', venue:'hard-club', genre:'Rock', date: fmtDate(addDays(today,2)), time:'22:00', price:'€14', desc:'A banda representante de Portugal no Eurovision 2021 apresenta o seu novo álbum com uma energia ao vivo inconfundível.', intimate:true },
+  { id:7, title:'Noite de Jazz — João Pedro Coelho Trio', venue:'maus-habitos', genre:'Jazz', date: fmtDate(addDays(today,3)), time:'21:00', price:'€8', desc:'Sessão semanal de jazz no Maus Hábitos com o trio de João Pedro Coelho. Piano, contrabaixo e bateria num espaço de 150 pessoas.', intimate:true },
+  { id:8, title:'Wet Bed Gang', venue:'rca', genre:'Hip-hop', date: fmtDate(addDays(today,3)), time:'22:30', price:'€16', desc:'O colectivo portuense que reinventou o rap nacional. Letras que falam do Porto sem filtro, com uma energia de bloco de apartamentos.', intimate:true },
+  { id:9, title:'Dead Combo', venue:'understage', genre:'Experimental', date: fmtDate(addDays(today,4)), time:'21:30', price:'€12', desc:'Guitarra e baixo em loops hipnóticos que cruzam o fado com o spaghetti western. Um dos projectos mais originais da música portuguesa.', intimate:true },
+  { id:10, title:'Pega Monstro', venue:'maus-habitos', genre:'Punk', date: fmtDate(addDays(today,5)), time:'22:00', price:'€10', desc:'O duo punk-rock mais barulhento de Lisboa desce ao Porto para noite de feedback e intensidade. Espaço limitado.', intimate:true },
+  { id:11, title:'Nídia', venue:'hard-club', genre:'Electrónica', date: fmtDate(addDays(today,5)), time:'23:00', price:'€10', desc:'Produtora e DJ de batukadeiras e kuduro futurista. O seu estilo único desafia qualquer categorização e enche a pista sempre.', intimate:true },
+  { id:12, title:'Bonga', venue:'rca', genre:'Folk', date: fmtDate(addDays(today,6)), time:'21:30', price:'€20', desc:'Lenda da música angolana, Bonga traz o semba e o merengue numa celebração de mais de 50 anos de carreira.', intimate:false },
+  { id:13, title:'Selma Uamusse', venue:'understage', genre:'Experimental', date: fmtDate(addDays(today,7)), time:'21:00', price:'€10', desc:'Actriz e cantora moçambicana apresenta espectáculo que une teatro, canto e percussão africana. Uma experiência de palco rara.', intimate:true },
+  { id:14, title:'HMB', venue:'maus-habitos', genre:'Jazz', date: fmtDate(addDays(today,8)), time:'22:00', price:'€8', desc:'Hip-hop e jazz em colisão com o trio portuense HMB. Samples ao vivo, improvisação e bases que batem sem parar.', intimate:true },
+  { id:15, title:'Slow J', venue:'hard-club', genre:'Hip-hop', date: fmtDate(addDays(today,8)), time:'23:00', price:'€15', desc:'R&B e hip-hop com influências de trip-hop e soul. O artista portuense é um dos nomes mais em alta da música portuguesa actual.', intimate:false },
+  { id:16, title:'Maria Reis', venue:'understage', genre:'Folk', date: fmtDate(addDays(today,9)), time:'21:00', price:'€10', desc:'Cantautora de Lisboa com uma voz que para o tempo. Guitarra acústica e histórias de amor urbano num espaço de 150 pessoas.', intimate:true },
+  { id:17, title:'PNL (tribute)', venue:'rca', genre:'Hip-hop', date: fmtDate(addDays(today,9)), time:'23:00', price:'€6', desc:'Noite de tributo ao duo francês PNL com DJs que interpretam a sua discografia do início ao fim. Entrada suave.', intimate:true },
+  { id:18, title:'Glockenwise', venue:'maus-habitos', genre:'Noise', date: fmtDate(addDays(today,10)), time:'22:00', price:'€8', desc:'Experimental noise rock com camadas densas de guitarra e percussão industrial. Para os que gostam de sair com os ouvidos a ranger.', intimate:true },
+  { id:19, title:'Ana Lua Caiano', venue:'understage', genre:'Experimental', date: fmtDate(addDays(today,11)), time:'21:30', price:'€12', desc:'Electroacústica que cruza o folclore português com a música concreta. Um dos projectos mais originais a emergir em Portugal nos últimos anos.', intimate:true },
+  { id:20, title:'Conjunto Corona', venue:'rca', genre:'Folk', date: fmtDate(addDays(today,12)), time:'21:00', price:'€10', desc:'Rock de raiz com influências do folk regional português. Guitarra portuguesa eléctrica e melodias que ficam na cabeça.', intimate:true }
+];
+
+let activeGenre = 'all';
+let currentTab = 'agenda';
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  showInstallBanner();
+});
+
+function showInstallBanner() {
+  const container = document.getElementById('install-banner-container');
+  if (!container) return;
+  container.innerHTML = `
+    <div class="install-banner" id="install-banner">
+      <div style="font-size:28px">📲</div>
+      <div class="install-banner-text">
+        <div class="install-banner-title">Instalar a app</div>
+        <div class="install-banner-sub">Adicionar ao ecrã inicial</div>
+      </div>
+      <button class="install-btn-small" onclick="installApp()">Instalar</button>
+    </div>
+  `;
+}
+
+async function installApp() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const result = await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  document.getElementById('install-banner').style.display = 'none';
+}
+
+function getGenres() {
+  const genres = [...new Set(EVENTS.map(e => e.genre))].sort();
+  return genres;
+}
+
+function buildFilters() {
+  const bar = document.getElementById('genre-filters');
+  const genres = getGenres();
+  bar.innerHTML = `<button class="filter-chip ${activeGenre === 'all' ? 'active' : ''}" data-genre="all" onclick="setGenre('all')">Todos</button>`;
+  genres.forEach(g => {
+    bar.innerHTML += `<button class="filter-chip ${activeGenre === g ? 'active' : ''}" data-genre="${g}" onclick="setGenre('${g}')">${g}</button>`;
+  });
+}
+
+function setGenre(genre) {
+  activeGenre = genre;
+  buildFilters();
+  renderAgenda();
+  updateStats();
+}
+
+function filteredEvents() {
+  if (activeGenre === 'all') return EVENTS;
+  return EVENTS.filter(e => e.genre === activeGenre);
+}
+
+function groupByDate(events) {
+  const groups = {};
+  events.forEach(e => {
+    if (!groups[e.date]) groups[e.date] = [];
+    groups[e.date].push(e);
+  });
+  return groups;
+}
+
+function fmtDateLabel(dateStr) {
+  const d = new Date(dateStr + 'T12:00:00');
+  const todayStr = fmtDate(today);
+  const tomorrowStr = fmtDate(addDays(today, 1));
+  if (dateStr === todayStr) return 'Hoje';
+  if (dateStr === tomorrowStr) return 'Amanhã';
+  const dias = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+  const meses = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  return `${dias[d.getDay()]}, ${d.getDate()} ${meses[d.getMonth()]}`;
+}
+
+function genreColor(genre) {
+  return GENRE_COLORS[genre] || { bg: '#444', text: '#fff' };
+}
+
+function renderEventCard(ev) {
+  const venue = VENUES[ev.venue];
+  const gc = genreColor(ev.genre);
+  return `
+    <div class="event-card" style="--card-color:${venue.color}" onclick="openDetail(${ev.id})">
+      <div class="card-top">
+        <div class="event-title">${ev.title}</div>
+        <div class="event-time">${ev.time}</div>
+      </div>
+      <div class="card-bottom">
+        <span class="venue-badge">${venue.name}</span>
+        <span class="genre-badge" style="--badge-bg:${gc.bg};--badge-text:${gc.text}">${ev.genre}</span>
+        ${ev.intimate ? `<span class="intimate-tag"><span class="intimate-dot"></span>Íntimo</span>` : ''}
+        <span class="price-badge">${ev.price}</span>
+      </div>
+    </div>
+  `;
+}
+
+function renderAgenda() {
+  const view = document.getElementById('agenda-view');
+  const events = filteredEvents();
+
+  if (events.length === 0) {
+    view.innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">🎵</div>
+        <div class="empty-title">Sem concertos</div>
+        <div class="empty-sub">Tenta outro filtro de género</div>
+      </div>`;
+    return;
+  }
+
+  const groups = groupByDate(events);
+  let html = '';
+  Object.keys(groups).sort().forEach(date => {
+    html += `<div class="date-group">
+      <div class="date-label"><span>${fmtDateLabel(date)}</span></div>
+      ${groups[date].map(renderEventCard).join('')}
+    </div>`;
+  });
+  view.innerHTML = html;
+}
+
+function renderVenues() {
+  const view = document.getElementById('venues-view');
+  let html = '<div class="venue-grid">';
+  Object.entries(VENUES).forEach(([id, v]) => {
+    const count = EVENTS.filter(e => e.venue === id).length;
+    html += `
+      <div class="venue-card" onclick="filterByVenue('${id}')">
+        <div class="venue-color-bar" style="background:${v.color}"></div>
+        <div class="venue-card-name">${v.name}</div>
+        <div class="venue-card-cap">${v.cap}</div>
+        <div class="venue-card-count">${count} eventos</div>
+      </div>`;
+  });
+  html += '</div>';
+  view.innerHTML = html;
+}
+
+function filterByVenue(venueId) {
+  const vEvents = EVENTS.filter(e => e.venue === venueId);
+  const venueGenres = [...new Set(vEvents.map(e => e.genre))];
+  switchTab('agenda');
+}
+
+function updateStats() {
+  const events = filteredEvents();
+  const bar = document.getElementById('stats-bar');
+  const intimate = events.filter(e => e.intimate).length;
+  const venues = [...new Set(events.map(e => e.venue))].length;
+  bar.innerHTML = `
+    <div class="stat-item"><div class="stat-num">${events.length}</div><div class="stat-label">Eventos</div></div>
+    <div class="stat-item"><div class="stat-num">${intimate}</div><div class="stat-label">Íntimos</div></div>
+    <div class="stat-item"><div class="stat-num">${venues}</div><div class="stat-label">Espaços</div></div>
+    <div class="stat-item"><div class="stat-num">${[...new Set(events.map(e=>e.genre))].length}</div><div class="stat-label">Géneros</div></div>
+  `;
+}
+
+function openDetail(id) {
+  const ev = EVENTS.find(e => e.id === id);
+  if (!ev) return;
+  const venue = VENUES[ev.venue];
+  const gc = genreColor(ev.genre);
+  const d = new Date(ev.date + 'T12:00:00');
+  const meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+  const dateLabel = `${d.getDate()} de ${meses[d.getMonth()]}`;
+
+  document.getElementById('sheet-content').innerHTML = `
+    <div class="sheet-title">${ev.title}</div>
+    <div class="sheet-meta">
+      <span class="venue-badge" style="font-size:12px;padding:4px 10px">${venue.name}</span>
+      <span class="genre-badge" style="--badge-bg:${gc.bg};--badge-text:${gc.text};font-size:12px;padding:4px 10px">${ev.genre}</span>
+      ${ev.intimate ? `<span class="intimate-tag" style="font-size:12px"><span class="intimate-dot"></span>Espaço íntimo</span>` : ''}
+    </div>
+    <p class="sheet-desc">${ev.desc}</p>
+    <div class="sheet-info-row"><span class="sheet-info-label">Data</span><span class="sheet-info-val">${dateLabel}</span></div>
+    <div class="sheet-info-row"><span class="sheet-info-label">Hora</span><span class="sheet-info-val">${ev.time}</span></div>
+    <div class="sheet-info-row"><span class="sheet-info-label">Local</span><span class="sheet-info-val">${venue.name}</span></div>
+    <div class="sheet-info-row"><span class="sheet-info-label">Capacidade</span><span class="sheet-info-val">${venue.cap}</span></div>
+    <div class="sheet-info-row"><span class="sheet-info-label">Entrada</span><span class="sheet-info-val">${ev.price}</span></div>
+    <button class="sheet-btn" onclick="openVenueUrl('${venue.url}')">Ver no site do espaço →</button>
+  `;
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function openVenueUrl(url) {
+  window.open(url, '_blank');
+}
+
+function closeDetail(e) {
+  if (e.target === document.getElementById('overlay') || e.target === document.getElementById('detail-sheet').parentNode) {
+    document.getElementById('overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.section-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.nav-item').forEach((n,i) => n.classList.toggle('active', (i===0 && tab==='agenda') || (i===1 && tab==='venues')));
+  document.getElementById('agenda-view').classList.toggle('hidden', tab !== 'agenda');
+  document.getElementById('venues-view').classList.toggle('hidden', tab !== 'venues');
+  document.getElementById('stats-bar').classList.toggle('hidden', tab !== 'agenda');
+  document.getElementById('genre-filters').parentElement.style.display = tab === 'agenda' ? '' : 'none';
+}
+
+buildFilters();
+renderAgenda();
+renderVenues();
+updateStats();
+</script>
+<script>if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>
