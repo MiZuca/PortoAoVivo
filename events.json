@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-15T13:48:52Z",
+  "updated_at": "2026-05-15T14:04:58Z",
   "total": 0,
   "venues": {
     "maus-habitos": {
@@ -20,7 +20,8 @@
     "understage": {
       "name": "Understage Rivoli",
       "capacity": 150,
-      "color": "#34d399"
+      "color": "#34d399",
+      "title_filter": "understage"
     }
   },
   "events": []
