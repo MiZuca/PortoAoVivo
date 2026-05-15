@@ -547,11 +547,12 @@
 </div>
 
 <script>
-const VENUES = {
-  'maus-habitos': { name: 'Maus Hábitos', cap: '~150 pessoas', color: '#e8ff47', short: 'MH', url: 'https://maushabitos.com' },
-  'rca': { name: 'RCA Club', cap: '~200 pessoas', color: '#ff6b35', short: 'RC', url: 'https://rcaclub.pt' },
-  'hard-club': { name: 'Hard Club', cap: '~200 pessoas', color: '#a78bfa', short: 'HC', url: 'https://hard-club.com' },
-  'understage': { name: 'Understage Rivoli', cap: '~150 pessoas', color: '#34d399', short: 'UR', url: 'https://teatrorivoli.pt' }
+// Venues com fallback — serão substituídos pelos dados do events.json
+let VENUES = {
+  'maus-habitos': { name: 'Maus Hábitos', cap: '~150 pessoas', color: '#e8ff47', url: 'https://maushabitos.com' },
+  'rca': { name: 'RCA — Radioclube Agramonte', cap: '~200 pessoas', color: '#ff6b35', url: 'https://rcaporto.com' },
+  'hard-club': { name: 'Hard Club', cap: '~200 pessoas', color: '#a78bfa', url: 'https://hardclubporto.com' },
+  'understage': { name: 'Understage Rivoli', cap: '~150 pessoas', color: '#34d399', url: 'https://teatromunicipaldoporto.pt' }
 };
 
 const GENRE_COLORS = {
@@ -586,32 +587,67 @@ function fmtDate(d) {
   return d.toISOString().split('T')[0];
 }
 
-const today = getToday();
-
-const EVENTS = [
-  { id:1, title:'Capitão Fausto', venue:'maus-habitos', genre:'Indie', date: fmtDate(today), time:'22:00', price:'€12', desc:'Uma das bandas mais importantes do indie português regressam ao Maus Hábitos para uma noite de pop psicodélica e letras inteligentes.', intimate:true },
-  { id:2, title:'Dino d\'Santiago', venue:'rca', genre:'Soul', date: fmtDate(today), time:'23:00', price:'€15', desc:'O artista lisboeta mistura funaná com R&B contemporâneo num espectáculo que une Cabo Verde e a modernidade urbana.', intimate:true },
-  { id:3, title:'Surma', venue:'understage', genre:'Folk', date: fmtDate(addDays(today,1)), time:'21:30', price:'€10', desc:'Voz única que cruza o folk português com sonoridades celtas e mediterrâneas. Um concerto de silêncio e presença absoluta.', intimate:true },
-  { id:4, title:'Rodrigo Leão', venue:'hard-club', genre:'Ambient', date: fmtDate(addDays(today,1)), time:'21:00', price:'€18', desc:'O membro fundador dos Madredeus apresenta o seu mais recente trabalho de música cinematic para piano e orquestra de câmara.', intimate:false },
-  { id:5, title:'ELYSIA', venue:'rca', genre:'Electrónica', date: fmtDate(addDays(today,2)), time:'23:30', price:'€8', desc:'Noite de techno e electrónica experimental com a DJ portuense ELYSIA, conhecida pelos seus sets de 4h que desafiam os limites do trance.', intimate:true },
-  { id:6, title:'Black Mamba', venue:'hard-club', genre:'Rock', date: fmtDate(addDays(today,2)), time:'22:00', price:'€14', desc:'A banda representante de Portugal no Eurovision 2021 apresenta o seu novo álbum com uma energia ao vivo inconfundível.', intimate:true },
-  { id:7, title:'Noite de Jazz — João Pedro Coelho Trio', venue:'maus-habitos', genre:'Jazz', date: fmtDate(addDays(today,3)), time:'21:00', price:'€8', desc:'Sessão semanal de jazz no Maus Hábitos com o trio de João Pedro Coelho. Piano, contrabaixo e bateria num espaço de 150 pessoas.', intimate:true },
-  { id:8, title:'Wet Bed Gang', venue:'rca', genre:'Hip-hop', date: fmtDate(addDays(today,3)), time:'22:30', price:'€16', desc:'O colectivo portuense que reinventou o rap nacional. Letras que falam do Porto sem filtro, com uma energia de bloco de apartamentos.', intimate:true },
-  { id:9, title:'Dead Combo', venue:'understage', genre:'Experimental', date: fmtDate(addDays(today,4)), time:'21:30', price:'€12', desc:'Guitarra e baixo em loops hipnóticos que cruzam o fado com o spaghetti western. Um dos projectos mais originais da música portuguesa.', intimate:true },
-  { id:10, title:'Pega Monstro', venue:'maus-habitos', genre:'Punk', date: fmtDate(addDays(today,5)), time:'22:00', price:'€10', desc:'O duo punk-rock mais barulhento de Lisboa desce ao Porto para noite de feedback e intensidade. Espaço limitado.', intimate:true },
-  { id:11, title:'Nídia', venue:'hard-club', genre:'Electrónica', date: fmtDate(addDays(today,5)), time:'23:00', price:'€10', desc:'Produtora e DJ de batukadeiras e kuduro futurista. O seu estilo único desafia qualquer categorização e enche a pista sempre.', intimate:true },
-  { id:12, title:'Bonga', venue:'rca', genre:'Folk', date: fmtDate(addDays(today,6)), time:'21:30', price:'€20', desc:'Lenda da música angolana, Bonga traz o semba e o merengue numa celebração de mais de 50 anos de carreira.', intimate:false },
-  { id:13, title:'Selma Uamusse', venue:'understage', genre:'Experimental', date: fmtDate(addDays(today,7)), time:'21:00', price:'€10', desc:'Actriz e cantora moçambicana apresenta espectáculo que une teatro, canto e percussão africana. Uma experiência de palco rara.', intimate:true },
-  { id:14, title:'HMB', venue:'maus-habitos', genre:'Jazz', date: fmtDate(addDays(today,8)), time:'22:00', price:'€8', desc:'Hip-hop e jazz em colisão com o trio portuense HMB. Samples ao vivo, improvisação e bases que batem sem parar.', intimate:true },
-  { id:15, title:'Slow J', venue:'hard-club', genre:'Hip-hop', date: fmtDate(addDays(today,8)), time:'23:00', price:'€15', desc:'R&B e hip-hop com influências de trip-hop e soul. O artista portuense é um dos nomes mais em alta da música portuguesa actual.', intimate:false },
-  { id:16, title:'Maria Reis', venue:'understage', genre:'Folk', date: fmtDate(addDays(today,9)), time:'21:00', price:'€10', desc:'Cantautora de Lisboa com uma voz que para o tempo. Guitarra acústica e histórias de amor urbano num espaço de 150 pessoas.', intimate:true },
-  { id:17, title:'PNL (tribute)', venue:'rca', genre:'Hip-hop', date: fmtDate(addDays(today,9)), time:'23:00', price:'€6', desc:'Noite de tributo ao duo francês PNL com DJs que interpretam a sua discografia do início ao fim. Entrada suave.', intimate:true },
-  { id:18, title:'Glockenwise', venue:'maus-habitos', genre:'Noise', date: fmtDate(addDays(today,10)), time:'22:00', price:'€8', desc:'Experimental noise rock com camadas densas de guitarra e percussão industrial. Para os que gostam de sair com os ouvidos a ranger.', intimate:true },
-  { id:19, title:'Ana Lua Caiano', venue:'understage', genre:'Experimental', date: fmtDate(addDays(today,11)), time:'21:30', price:'€12', desc:'Electroacústica que cruza o folclore português com a música concreta. Um dos projectos mais originais a emergir em Portugal nos últimos anos.', intimate:true },
-  { id:20, title:'Conjunto Corona', venue:'rca', genre:'Folk', date: fmtDate(addDays(today,12)), time:'21:00', price:'€10', desc:'Rock de raiz com influências do folk regional português. Guitarra portuguesa eléctrica e melodias que ficam na cabeça.', intimate:true }
-];
-
+let EVENTS = [];
 let activeGenre = 'all';
+let dataLoaded = false;
+
+async function loadEvents() {
+  try {
+    const r = await fetch('events.json?t=' + Date.now());
+    if (!r.ok) throw new Error('sem events.json');
+    const data = await r.json();
+
+    // Atualiza venues com dados reais
+    if (data.venues) {
+      Object.entries(data.venues).forEach(([id, v]) => {
+        VENUES[id] = {
+          name: v.name,
+          cap: `~${v.capacity} pessoas`,
+          color: v.color,
+          url: VENUES[id]?.url || '#',
+        };
+      });
+    }
+
+    // Converte eventos para o formato interno da app
+    const today = getToday();
+    EVENTS = (data.events || [])
+      .filter(e => e.date && new Date(e.date) >= today)
+      .map(e => ({
+        id: e.id,
+        title: e.title,
+        subtitle: e.subtitle || '',
+        venue: e.venue_id,
+        genre: e.type || 'Concerto',
+        date: e.date,
+        time: e.time || '',
+        price: '',
+        desc: e.subtitle || '',
+        intimate: e.intimate,
+        url: e.url,
+      }));
+
+    // Atualiza header com data de actualização
+    const updatedAt = new Date(data.updated_at);
+    const ago = Math.round((Date.now() - updatedAt) / 60000);
+    const agoText = ago < 60 ? `há ${ago}min` : `há ${Math.round(ago/60)}h`;
+    document.getElementById('last-update').textContent = `↻ actualizado ${agoText}`;
+
+    dataLoaded = true;
+  } catch(e) {
+    // Sem events.json — mostra estado vazio limpo
+    EVENTS = [];
+    document.getElementById('last-update').textContent = '↻ sem dados — corre o scraper';
+    dataLoaded = true;
+  }
+
+  buildFilters();
+  renderAgenda();
+  renderVenues();
+  updateStats();
+}
+
+const today = getToday();
 let currentTab = 'agenda';
 let deferredPrompt = null;
 
@@ -796,7 +832,7 @@ function openDetail(id) {
     <div class="sheet-info-row"><span class="sheet-info-label">Local</span><span class="sheet-info-val">${venue.name}</span></div>
     <div class="sheet-info-row"><span class="sheet-info-label">Capacidade</span><span class="sheet-info-val">${venue.cap}</span></div>
     <div class="sheet-info-row"><span class="sheet-info-label">Entrada</span><span class="sheet-info-val">${ev.price}</span></div>
-    <button class="sheet-btn" onclick="openVenueUrl('${venue.url}')">Ver no site do espaço →</button>
+    <button class="sheet-btn" onclick="openVenueUrl('${ev.url || venue.url}')">Ver no agenda-porto.pt →</button>
   `;
   document.getElementById('overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -823,10 +859,7 @@ function switchTab(tab) {
   document.getElementById('genre-filters').parentElement.style.display = tab === 'agenda' ? '' : 'none';
 }
 
-buildFilters();
-renderAgenda();
-renderVenues();
-updateStats();
+loadEvents();
 </script>
 <script>if("serviceWorker" in navigator) navigator.serviceWorker.register("/PortoAoVivo/sw.js", {scope: "/PortoAoVivo/"});</script>
 </body>
