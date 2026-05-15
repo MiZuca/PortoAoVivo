@@ -510,14 +510,11 @@
     <div class="logo">Porto<span>.</span>Ao<span>Vivo</span></div>
     <div class="header-meta" id="last-update"></div>
   </div>
-  <div class="filter-bar" id="genre-filters">
-    <button class="filter-chip active" data-genre="all">Todos</button>
-  </div>
 </header>
 
 <div class="stats-bar" id="stats-bar"></div>
 
-<div style="display:flex; gap:0; padding: 0 20px; border-bottom: 1px solid var(--border); background: var(--bg); position:sticky; top:113px; z-index:99;">
+<div style="display:flex; gap:0; padding: 0 20px; border-bottom: 1px solid var(--border); background: var(--bg); position:sticky; top:58px; z-index:99;">
   <div class="section-tab active" data-tab="agenda" onclick="switchTab('agenda')">Agenda</div>
   <div class="section-tab" data-tab="venues" onclick="switchTab('venues')">Espaços</div>
 </div>
@@ -555,21 +552,6 @@ let VENUES = {
   'understage': { name: 'Understage Rivoli', cap: '~150 pessoas', color: '#34d399', url: 'https://teatromunicipaldoporto.pt' }
 };
 
-const GENRE_COLORS = {
-  'Indie': { bg: '#e8ff47', text: '#0a0a0a' },
-  'Rock': { bg: '#ff6b35', text: '#fff' },
-  'Electrónica': { bg: '#a78bfa', text: '#fff' },
-  'Jazz': { bg: '#fbbf24', text: '#0a0a0a' },
-  'Experimental': { bg: '#f472b6', text: '#fff' },
-  'Hip-hop': { bg: '#34d399', text: '#0a0a0a' },
-  'Folk': { bg: '#fb923c', text: '#fff' },
-  'Metal': { bg: '#f87171', text: '#fff' },
-  'Soul': { bg: '#fbbf24', text: '#0a0a0a' },
-  'Punk': { bg: '#f87171', text: '#fff' },
-  'Noise': { bg: '#818cf8', text: '#fff' },
-  'Ambient': { bg: '#67e8f9', text: '#0a0a0a' },
-  'Pop': { bg: '#f9a8d4', text: '#0a0a0a' }
-};
 
 function getToday() {
   const d = new Date();
@@ -588,7 +570,6 @@ function fmtDate(d) {
 }
 
 let EVENTS = [];
-let activeGenre = 'all';
 let dataLoaded = false;
 
 async function loadEvents() {
@@ -642,7 +623,6 @@ async function loadEvents() {
     dataLoaded = true;
   }
 
-  buildFilters();
   renderAgenda();
   renderVenues();
   updateStats();
@@ -681,30 +661,8 @@ async function installApp() {
   document.getElementById('install-banner').style.display = 'none';
 }
 
-function getGenres() {
-  const genres = [...new Set(EVENTS.map(e => e.genre))].sort();
-  return genres;
-}
-
-function buildFilters() {
-  const bar = document.getElementById('genre-filters');
-  const genres = getGenres();
-  bar.innerHTML = `<button class="filter-chip ${activeGenre === 'all' ? 'active' : ''}" data-genre="all" onclick="setGenre('all')">Todos</button>`;
-  genres.forEach(g => {
-    bar.innerHTML += `<button class="filter-chip ${activeGenre === g ? 'active' : ''}" data-genre="${g}" onclick="setGenre('${g}')">${g}</button>`;
-  });
-}
-
-function setGenre(genre) {
-  activeGenre = genre;
-  buildFilters();
-  renderAgenda();
-  updateStats();
-}
-
 function filteredEvents() {
-  if (activeGenre === 'all') return EVENTS;
-  return EVENTS.filter(e => e.genre === activeGenre);
+  return EVENTS;
 }
 
 function groupByDate(events) {
@@ -727,13 +685,9 @@ function fmtDateLabel(dateStr) {
   return `${dias[d.getDay()]}, ${d.getDate()} ${meses[d.getMonth()]}`;
 }
 
-function genreColor(genre) {
-  return GENRE_COLORS[genre] || { bg: '#444', text: '#fff' };
-}
 
 function renderEventCard(ev) {
   const venue = VENUES[ev.venue];
-  const gc = genreColor(ev.genre);
   return `
     <div class="event-card" style="--card-color:${venue.color}" onclick="openDetail('${ev.id}')">
       <div class="card-top">
@@ -794,21 +748,16 @@ function renderVenues() {
 }
 
 function filterByVenue(venueId) {
-  const vEvents = EVENTS.filter(e => e.venue === venueId);
-  const venueGenres = [...new Set(vEvents.map(e => e.genre))];
   switchTab('agenda');
 }
 
 function updateStats() {
   const events = filteredEvents();
   const bar = document.getElementById('stats-bar');
-  const intimate = events.filter(e => e.intimate).length;
   const venues = [...new Set(events.map(e => e.venue))].length;
   bar.innerHTML = `
     <div class="stat-item"><div class="stat-num">${events.length}</div><div class="stat-label">Eventos</div></div>
-    <div class="stat-item"><div class="stat-num">${intimate}</div><div class="stat-label">Íntimos</div></div>
     <div class="stat-item"><div class="stat-num">${venues}</div><div class="stat-label">Espaços</div></div>
-    <div class="stat-item"><div class="stat-num">${[...new Set(events.map(e=>e.genre))].length}</div><div class="stat-label">Géneros</div></div>
   `;
 }
 
@@ -816,7 +765,6 @@ function openDetail(id) {
   const ev = EVENTS.find(e => e.id === id);
   if (!ev) return;
   const venue = VENUES[ev.venue];
-  const gc = genreColor(ev.genre);
   const d = new Date(ev.date + 'T12:00:00');
   const meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
   const dateLabel = `${d.getDate()} de ${meses[d.getMonth()]}`;
@@ -858,7 +806,6 @@ function switchTab(tab) {
   document.getElementById('agenda-view').classList.toggle('hidden', tab !== 'agenda');
   document.getElementById('venues-view').classList.toggle('hidden', tab !== 'venues');
   document.getElementById('stats-bar').classList.toggle('hidden', tab !== 'agenda');
-  document.getElementById('genre-filters').parentElement.style.display = tab === 'agenda' ? '' : 'none';
 }
 
 loadEvents();
