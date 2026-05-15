@@ -742,8 +742,6 @@ function renderEventCard(ev) {
       </div>
       <div class="card-bottom">
         <span class="venue-badge">${venue.name}</span>
-        <span class="genre-badge" style="--badge-bg:${gc.bg};--badge-text:${gc.text}">${ev.genre}</span>
-        ${ev.intimate ? `<span class="intimate-tag"><span class="intimate-dot"></span>Íntimo</span>` : ''}
         <span class="price-badge">${ev.price}</span>
       </div>
     </div>
@@ -829,8 +827,6 @@ function openDetail(id) {
     <div class="sheet-title">${ev.title}</div>
     <div class="sheet-meta">
       <span class="venue-badge" style="font-size:12px;padding:4px 10px">${venue.name}</span>
-      <span class="genre-badge" style="--badge-bg:${gc.bg};--badge-text:${gc.text};font-size:12px;padding:4px 10px">${ev.genre}</span>
-      ${ev.intimate ? `<span class="intimate-tag" style="font-size:12px"><span class="intimate-dot"></span>Espaço íntimo</span>` : ''}
     </div>
     ${ev.desc ? `<p class="sheet-desc">${ev.desc}</p>` : ''}
     <div class="sheet-info-row"><span class="sheet-info-label">Data</span><span class="sheet-info-val">${dateLabel}</span></div>
