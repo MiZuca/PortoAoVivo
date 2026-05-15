@@ -108,58 +108,58 @@ def scrape_venue(venue_id, info):
     soup = BeautifulSoup(html, "html.parser")
     events = []
 
-    for link in soup.find_all("a", href=re.compile(r"^/en/evento/")):
-        title_el = (
-            link.find(class_=re.compile(r"event-?title", re.I))
-            or link.find("h2")
-            or link.find("h3")
-        )
-        if not title_el:
-            texts = [t.strip() for t in link.stripped_strings if len(t.strip()) > 3]
-            title_text = texts[0] if texts else ""
-        else:
-            title_text = title_el.get_text(strip=True)
+    # Each event card has data-bl-name="Card. Card Event".
+    # The <a data-bl-name="Link evento"> is an empty overlay — all content
+    # lives in sibling divs identified by data-bl-name attributes.
+    for card in soup.find_all(attrs={"data-bl-name": "Card. Card Event"}):
+        link_el = card.find(attrs={"data-bl-name": "Link evento"})
+        if not link_el or not link_el.get("href"):
+            continue
+        href = link_el["href"]
+        if "/evento/" not in href:
+            continue
 
+        title_el = card.find(attrs={"data-bl-name": "Title"})
+        title_text = title_el.get_text(strip=True) if title_el else ""
         if not title_text:
             continue
 
-        sub_el = link.find(class_=re.compile(r"event-?sub", re.I))
-        subtitle = sub_el.get_text(strip=True) if sub_el else ""
+        subtitle_el = card.find(attrs={"data-bl-name": "Subtitle"})
+        subtitle = subtitle_el.get_text(strip=True) if subtitle_el else ""
 
-        day_el = link.find(class_=re.compile(r"\bday\b", re.I))
-        month_el = link.find(class_=re.compile(r"\bmonth\b", re.I))
-        date_iso = parse_date(
-            day_el.get_text(strip=True) if day_el else "",
-            month_el.get_text(strip=True) if month_el else "",
+        # Start Date contains two Text divs: day number and month abbreviation
+        date_el = card.find(attrs={"data-bl-name": "Start Date"})
+        date_texts = (
+            [d.get_text(strip=True) for d in date_el.find_all(attrs={"data-bl-name": "Text"})]
+            if date_el else []
         )
+        day_str = date_texts[0] if len(date_texts) > 0 else ""
+        month_str = date_texts[1] if len(date_texts) > 1 else ""
+        date_iso = parse_date(day_str, month_str)
+        if not date_iso:
+            continue
 
-        hour_el = link.find(class_=re.compile(r"\bhour\b", re.I))
-        time_str = hour_el.get_text(strip=True) if hour_el else None
-
-        section_el = link.find(class_=re.compile(r"section-?name", re.I))
-        format_el = link.find(class_=re.compile(r"format-?name", re.I))
-        section = section_el.get_text(strip=True) if section_el else ""
-        fmt = format_el.get_text(strip=True) if format_el else ""
-
-        s = section.lower()
-        f = fmt.lower()
+        # Section link: href="/en/seccao/musica-e-clubbing/" or text "Music and clubbing"
+        section_el = card.find(attrs={"data-bl-name": "Left"})
+        section_href = section_el.get("href", "") if section_el else ""
+        section_text = section_el.get_text(strip=True).lower() if section_el else ""
         is_music = (
-            "music" in s or "clubbing" in s or "musica" in s
-            or f in {"concert", "party", "show", "listening", "dj set", "concerto", "festa"}
-            or any(k in f for k in ("concert", "party", "dj", "listen"))
+            "musica-e-clubbing" in section_href
+            or "music" in section_text
+            or "clubbing" in section_text
         )
         if not is_music:
             continue
 
-        if not date_iso:
-            continue
+        tag_el = card.find(attrs={"data-bl-name": "Tag 2"})
+        fmt = tag_el.get_text(strip=True) if tag_el else ""
 
         # Filtro por título (ex: Understage dentro do Rivoli)
         title_filter = info.get("title_filter")
         if title_filter and title_filter.lower() not in title_text.lower():
             continue
 
-        slug = link["href"].split("/evento/")[-1].strip("/")
+        slug = href.split("/evento/")[-1].strip("/")
         ev_id = re.sub(r"[^a-z0-9-]", "", slug)
 
         events.append({
@@ -170,9 +170,9 @@ def scrape_venue(venue_id, info):
             "venue": info["name"],
             "venue_capacity": info["capacity"],
             "date": date_iso,
-            "time": time_str,
+            "time": None,
             "type": fmt,
-            "url": "https://www.agenda-porto.pt" + link["href"],
+            "url": "https://www.agenda-porto.pt" + href,
             "intimate": info["capacity"] <= 200,
         })
 
