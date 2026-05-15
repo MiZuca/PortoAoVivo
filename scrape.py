@@ -2,6 +2,13 @@
 """
 Porto Ao Vivo — scraper para agenda-porto.pt
 Corre via GitHub Actions e gera events.json na raiz do repositório.
+
+Estratégia:
+  Em vez de scrape por venue, faz-se scrape da secção "musica-e-clubbing"
+  (que inclui TODOS os eventos musicais do Porto) e filtra-se por ref_local
+  correspondente aos 4 venues pretendidos.  Desta forma apanha-se também
+  eventos que não estão ligados à página do venue mas que têm a secção
+  e o local correctos na base de dados.
 """
 
 import json
@@ -9,31 +16,37 @@ import re
 import time
 from datetime import datetime, date, timezone
 
+import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
-# ─── Venues ──────────────────────────────────────────────────────────────────
+# ─── Configuração dos venues ──────────────────────────────────────────────────
+# content_id: ID interno do bndlyr CMS (data-bl-content na página do venue)
 VENUES = {
     "maus-habitos": {
         "name": "Maus Hábitos",
+        "content_id": "nzYD78uzLNF",
         "url": "https://www.agenda-porto.pt/en/local/nzYD78uzLNF/",
         "capacity": 150,
         "color": "#e8ff47",
     },
     "hard-club": {
         "name": "Hard Club",
+        "content_id": "nKeROL8JlrK",
         "url": "https://www.agenda-porto.pt/en/local/nKeROL8JlrK/",
         "capacity": 200,
         "color": "#a78bfa",
     },
     "rca": {
         "name": "RCA — Radioclube Agramonte",
+        "content_id": "spmnjEPAYD7gQtPk",
         "url": "https://www.agenda-porto.pt/en/local/rca-radioclube-agramonte/",
         "capacity": 200,
         "color": "#ff6b35",
     },
     "understage": {
         "name": "Understage Rivoli",
+        "content_id": "sFkX99zxmC1Yuzko",
         "url": "https://www.agenda-porto.pt/en/local/rivoli-theatre/",
         "capacity": 150,
         "color": "#34d399",
@@ -41,39 +54,40 @@ VENUES = {
     },
 }
 
-MONTHS = {
-    "jan": 1, "feb": 2, "fev": 2, "mar": 3,
-    "apr": 4, "abr": 4, "may": 5, "mai": 5,
-    "jun": 6, "jul": 7, "aug": 8, "ago": 8,
-    "sep": 9, "set": 9, "oct": 10, "out": 10,
-    "nov": 11, "dec": 12, "dez": 12,
+# Mapa inverso: content_id → venue_id (para filtrar por ref_local)
+_CONTENT_ID_TO_VENUE = {info["content_id"]: vid for vid, info in VENUES.items()}
+
+MUSIC_SECTION_URL = "https://www.agenda-porto.pt/en/seccao/musica-e-clubbing/"
+BONDLAYER_API = "https://repeater.bondlayer.com/fetch"
+_HTTP = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+    "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
 }
 
-
-_playwright = None
+# ─── Playwright ───────────────────────────────────────────────────────────────
+_playwright_inst = None
 _browser = None
 
+
 def get_browser():
-    global _playwright, _browser
+    global _playwright_inst, _browser
     if _browser is None:
-        _playwright = sync_playwright().start()
-        _browser = _playwright.chromium.launch(headless=True)
+        _playwright_inst = sync_playwright().start()
+        _browser = _playwright_inst.chromium.launch(headless=True)
     return _browser
+
 
 def fetch(url, retries=3):
     for attempt in range(retries):
         try:
             browser = get_browser()
             page = browser.new_page()
-            page.set_extra_http_headers({
-                "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
-            })
+            page.set_extra_http_headers({"Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8"})
             page.goto(url, wait_until="networkidle", timeout=30000)
-            # Aguarda que apareçam links de eventos
             try:
-                page.wait_for_selector('a[href*="/evento/"]', timeout=10000)
+                page.wait_for_selector("[data-bl-name]", timeout=8000)
             except Exception:
-                pass  # Pode não ter eventos — não é erro
+                pass
             html = page.content()
             page.close()
             return html
@@ -83,100 +97,216 @@ def fetch(url, retries=3):
     return None
 
 
-def parse_date(day_str, month_str):
+# ─── bndlyr helpers ───────────────────────────────────────────────────────────
+
+def _bndlyr_config(html: str) -> dict | None:
+    soup = BeautifulSoup(html, "html.parser")
+    script = soup.find("script", string=re.compile(r"BndLyrScripts"))
+    if not script:
+        return None
+    t = script.string
+    cfg_m = re.search(r"window\.BndDebug\s*=\s*(\{[^}]+\})", t)
+    cjs_m = re.search(r'"(https://cdn\.bndlyr\.com/[^"]+content\.[^"]+\.js[^"]*)"', t)
+    sjs_m = re.search(r'"(https://cdn\.bndlyr\.com/[^"]+struct\.js[^"]*)"', t)
+    if not (cfg_m and cjs_m and sjs_m):
+        return None
+    cfg = json.loads(cfg_m.group(1))
+    return {
+        "project_id": cfg.get("projectId", ""),
+        "content_id": cfg.get("contentId", ""),
+        "hash": str(cfg.get("hash", "0")),
+        "target": cfg.get("target", "production"),
+        "content_js_url": cjs_m.group(1),
+        "struct_js_url": sjs_m.group(1),
+    }
+
+
+def _events_repeater_id(html: str) -> str | None:
+    soup = BeautifulSoup(html, "html.parser")
+    # A secção de música usa "Flex Layout Events" (sem acento)
+    el = soup.find(attrs={"data-bl-name": re.compile(r"Flex Layout Events?", re.I)})
+    return el.get("data-repeater") if el else None
+
+
+def _fetch_content_js(url: str) -> dict:
+    r = requests.get(url, headers=_HTTP, timeout=20)
+    m = re.match(r"window\.BndLyrContent\s*=\s*(\{.*\})\s*;?\s*$", r.text, re.DOTALL)
+    return json.loads(m.group(1)) if m else {}
+
+
+def _get_struct_text(url: str, _cache: dict = {}) -> str:
+    if url not in _cache:
+        r = requests.get(url, headers=_HTTP, timeout=30)
+        _cache[url] = r.text
+    return _cache[url]
+
+
+def _repeater_def(struct_text: str, repeater_id: str) -> dict | None:
+    key = f'"{repeater_id}":{{'
+    idx = struct_text.find(key)
+    if idx < 0:
+        return None
+    obj_start = struct_text.index("{", idx + len(f'"{repeater_id}":'))
+    chunk = struct_text[obj_start:]
+    depth = end = 0
+    for i, ch in enumerate(chunk):
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                end = i + 1
+                break
     try:
-        day = int(re.sub(r"\D", "", day_str or ""))
-        month = MONTHS.get((month_str or "").strip().lower()[:3])
-        if not month or not day:
-            return None
-        year = date.today().year
-        ev_date = date(year, month, day)
-        if (date.today() - ev_date).days > 30:
-            ev_date = date(year + 1, month, day)
-        return ev_date.isoformat()
+        return json.loads(chunk[:end])
     except Exception:
         return None
 
 
-def scrape_venue(venue_id, info):
-    print(f"\n-> {info['name']}")
-    html = fetch(info["url"])
-    if not html:
-        print("  ERRO: pagina inacessivel")
+def _api_page(rdef: dict, page: int, cfg: dict, ev_content: dict) -> list:
+    body_r = dict(rdef)
+    body_r["page"] = page
+    body_r["userSorts"] = ev_content.get("userSorts", {})
+    body_r["userFilters"] = ev_content.get("userFilters", {})
+    body = {
+        "hash": cfg["hash"],
+        "target": cfg["target"],
+        "geoData": {"lat": 0, "lon": 0},
+        "searchQuery": "",
+        "favorites": {},
+        "locale": "en",
+        "contentId": cfg["content_id"],
+        "projectId": cfg["project_id"],
+        "repeater": body_r,
+    }
+    hdrs = {
+        **_HTTP,
+        "Content-Type": "application/json",
+        "Origin": "https://www.agenda-porto.pt",
+        "Referer": MUSIC_SECTION_URL,
+    }
+    try:
+        resp = requests.post(BONDLAYER_API, json=body, headers=hdrs, timeout=20)
+        return resp.json().get("items", []) if resp.status_code == 200 else []
+    except Exception:
         return []
 
-    soup = BeautifulSoup(html, "html.parser")
+
+def _item_to_event(item: dict) -> dict | None:
+    # Determina o venue pelo ref_local (content_id do venue)
+    ref_local = item.get("ref_local")
+    venue_id = _CONTENT_ID_TO_VENUE.get(ref_local)
+    if not venue_id:
+        return None
+    info = VENUES[venue_id]
+
+    # Título: text_display_title é o título limpo; strip de prefixo [Venue] caso exista
+    title_data = item.get("text_display_title") or item.get("_title") or {}
+    title = (title_data.get("en") or title_data.get("all") or "") if isinstance(title_data, dict) else ""
+    title = re.sub(r"^\[[^\]]+\]\s*-\s*", "", title).strip()
+    if not title:
+        return None
+
+    # Filtro por título (ex: Understage dentro do Rivoli)
+    tf = info.get("title_filter")
+    if tf and tf.lower() not in title.lower():
+        return None
+
+    sub_data = item.get("text_subtitle") or {}
+    subtitle = (sub_data.get("en") or sub_data.get("all") or "") if isinstance(sub_data, dict) else ""
+
+    start_str = item.get("datetime_start_date", "")
+    if not start_str:
+        return None
+    try:
+        # Horários em hora local portuguesa (não UTC)
+        dt = datetime.fromisoformat(start_str.replace("Z", ""))
+        date_iso = dt.date().isoformat()
+        hide_hour = item.get("boolean_esconder_hora", False)
+        time_str = None if hide_hour else dt.strftime("%H:%M")
+    except Exception:
+        return None
+
+    # Descarta eventos com mais de 1 ano no futuro (provavelmente erro de dados)
+    try:
+        if (date.fromisoformat(date_iso) - date.today()).days > 365:
+            return None
+    except Exception:
+        pass
+
+    slug_data = item.get("_slug") or {}
+    slug = (slug_data.get("all") or slug_data.get("en") or "") if isinstance(slug_data, dict) else ""
+    if not slug:
+        return None
+
+    ev_id = re.sub(r"[^a-z0-9-]", "", slug)
+    return {
+        "id": ev_id,
+        "title": title,
+        "subtitle": subtitle,
+        "venue_id": venue_id,
+        "venue": info["name"],
+        "venue_capacity": info["capacity"],
+        "date": date_iso,
+        "time": time_str,
+        "type": "",
+        "url": f"https://www.agenda-porto.pt/en/evento/{slug}/",
+        "intimate": info["capacity"] <= 200,
+    }
+
+
+# ─── Scraper principal ────────────────────────────────────────────────────────
+
+def scrape_all() -> list:
+    """Faz scrape de todos os eventos musicais e filtra pelos 4 venues."""
+    print(f"\nA carregar secção musica-e-clubbing...")
+    html = fetch(MUSIC_SECTION_URL)
+    if not html:
+        print("  ERRO: secção inacessível")
+        return []
+
+    cfg = _bndlyr_config(html)
+    repeater_id = _events_repeater_id(html)
+    if not cfg or not repeater_id:
+        print("  ERRO: config bndlyr não encontrada")
+        return []
+
+    print(f"  repeater: {repeater_id}")
+
+    content_data = _fetch_content_js(cfg["content_js_url"])
+    ev_content = content_data.get(repeater_id, {})
+    page1_items = ev_content.get("items", [])
+    total_pages = ev_content.get("totalPages", 1)
+    print(f"  página 1: {len(page1_items)} items, total páginas: {total_pages}")
+
+    struct_text = _get_struct_text(cfg["struct_js_url"])
+    rdef = _repeater_def(struct_text, repeater_id)
+
+    all_items = list(page1_items)
+    if rdef and total_pages > 1:
+        for page in range(2, total_pages + 1):
+            items = _api_page(rdef, page, cfg, ev_content)
+            if not items:
+                break
+            all_items.extend(items)
+            print(f"  página {page}: +{len(items)} items")
+            time.sleep(0.3)
+
+    print(f"  total bruto: {len(all_items)} eventos musicais")
+
     events = []
+    for item in all_items:
+        ev = _item_to_event(item)
+        if ev:
+            events.append(ev)
 
-    # Each event card has data-bl-name="Card. Card Event".
-    # The <a data-bl-name="Link evento"> is an empty overlay — all content
-    # lives in sibling divs identified by data-bl-name attributes.
-    for card in soup.find_all(attrs={"data-bl-name": "Card. Card Event"}):
-        link_el = card.find(attrs={"data-bl-name": "Link evento"})
-        if not link_el or not link_el.get("href"):
-            continue
-        href = link_el["href"]
-        if "/evento/" not in href:
-            continue
+    # Conta por venue
+    counts = {}
+    for ev in events:
+        counts[ev["venue"]] = counts.get(ev["venue"], 0) + 1
+    for venue, n in counts.items():
+        print(f"  {venue}: {n} eventos")
 
-        title_el = card.find(attrs={"data-bl-name": "Title"})
-        title_text = title_el.get_text(strip=True) if title_el else ""
-        if not title_text:
-            continue
-
-        subtitle_el = card.find(attrs={"data-bl-name": "Subtitle"})
-        subtitle = subtitle_el.get_text(strip=True) if subtitle_el else ""
-
-        # Start Date contains two Text divs: day number and month abbreviation
-        date_el = card.find(attrs={"data-bl-name": "Start Date"})
-        date_texts = (
-            [d.get_text(strip=True) for d in date_el.find_all(attrs={"data-bl-name": "Text"})]
-            if date_el else []
-        )
-        day_str = date_texts[0] if len(date_texts) > 0 else ""
-        month_str = date_texts[1] if len(date_texts) > 1 else ""
-        date_iso = parse_date(day_str, month_str)
-        if not date_iso:
-            continue
-
-        # Section link: href="/en/seccao/musica-e-clubbing/" or text "Music and clubbing"
-        section_el = card.find(attrs={"data-bl-name": "Left"})
-        section_href = section_el.get("href", "") if section_el else ""
-        section_text = section_el.get_text(strip=True).lower() if section_el else ""
-        is_music = (
-            "musica-e-clubbing" in section_href
-            or "music" in section_text
-            or "clubbing" in section_text
-        )
-        if not is_music:
-            continue
-
-        tag_el = card.find(attrs={"data-bl-name": "Tag 2"})
-        fmt = tag_el.get_text(strip=True) if tag_el else ""
-
-        # Filtro por título (ex: Understage dentro do Rivoli)
-        title_filter = info.get("title_filter")
-        if title_filter and title_filter.lower() not in title_text.lower():
-            continue
-
-        slug = href.split("/evento/")[-1].strip("/")
-        ev_id = re.sub(r"[^a-z0-9-]", "", slug)
-
-        events.append({
-            "id": ev_id,
-            "title": title_text,
-            "subtitle": subtitle,
-            "venue_id": venue_id,
-            "venue": info["name"],
-            "venue_capacity": info["capacity"],
-            "date": date_iso,
-            "time": None,
-            "type": fmt,
-            "url": "https://www.agenda-porto.pt" + href,
-            "intimate": info["capacity"] <= 200,
-        })
-
-    print(f"  {len(events)} eventos de musica encontrados")
     return events
 
 
@@ -186,12 +316,7 @@ def main():
     print(f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 52)
 
-    all_events = []
-    for venue_id, info in VENUES.items():
-        events = scrape_venue(venue_id, info)
-        all_events.extend(events)
-        time.sleep(1.5)
-
+    all_events = scrape_all()
     all_events.sort(key=lambda e: (e["date"], e["venue"]))
 
     seen, unique = set(), []
@@ -201,7 +326,7 @@ def main():
             unique.append(ev)
 
     venues_public = {
-        k: {kk: vv for kk, vv in v.items() if kk != "url"}
+        k: {kk: vv for kk, vv in v.items() if kk not in ("content_id",)}
         for k, v in VENUES.items()
     }
 
@@ -218,12 +343,11 @@ def main():
     print(f"\nTotal: {len(unique)} eventos guardados em events.json")
     print(f"Actualizado em: {output['updated_at']}")
 
-    # Fecha o browser
-    global _browser, _playwright
+    global _browser, _playwright_inst
     if _browser:
         _browser.close()
-    if _playwright:
-        _playwright.stop()
+    if _playwright_inst:
+        _playwright_inst.stop()
 
 
 if __name__ == "__main__":
