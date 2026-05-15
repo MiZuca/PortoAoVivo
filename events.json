@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-05-15T13:48:52Z",
+  "total": 0,
+  "venues": {
+    "maus-habitos": {
+      "name": "Maus Hábitos",
+      "capacity": 150,
+      "color": "#e8ff47"
+    },
+    "hard-club": {
+      "name": "Hard Club",
+      "capacity": 200,
+      "color": "#a78bfa"
+    },
+    "rca": {
+      "name": "RCA — Radioclube Agramonte",
+      "capacity": 200,
+      "color": "#ff6b35"
+    },
+    "understage": {
+      "name": "Understage Rivoli",
+      "capacity": 150,
+      "color": "#34d399"
+    }
+  },
+  "events": []
+}
