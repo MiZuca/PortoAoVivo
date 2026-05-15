@@ -621,10 +621,11 @@ async function loadEvents() {
         genre: e.type || 'Concerto',
         date: e.date,
         time: e.time || '',
-        price: '',
+        price: e.price || '',
+        ticket_url: e.ticket_url || '',
         desc: e.subtitle || '',
         intimate: e.intimate,
-        url: e.url,
+        url: e.url || '',
       }));
 
     // Atualiza header com data de actualização
@@ -734,7 +735,7 @@ function renderEventCard(ev) {
   const venue = VENUES[ev.venue];
   const gc = genreColor(ev.genre);
   return `
-    <div class="event-card" style="--card-color:${venue.color}" onclick="openDetail(${ev.id})">
+    <div class="event-card" style="--card-color:${venue.color}" onclick="openDetail('${ev.id}')">
       <div class="card-top">
         <div class="event-title">${ev.title}</div>
         <div class="event-time">${ev.time}</div>
@@ -766,9 +767,12 @@ function renderAgenda() {
   const groups = groupByDate(events);
   let html = '';
   Object.keys(groups).sort().forEach(date => {
+    const sorted = groups[date].slice().sort((a, b) =>
+      (a.time || '99:99').localeCompare(b.time || '99:99')
+    );
     html += `<div class="date-group">
       <div class="date-label"><span>${fmtDateLabel(date)}</span></div>
-      ${groups[date].map(renderEventCard).join('')}
+      ${sorted.map(renderEventCard).join('')}
     </div>`;
   });
   view.innerHTML = html;
@@ -819,6 +823,8 @@ function openDetail(id) {
   const meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
   const dateLabel = `${d.getDate()} de ${meses[d.getMonth()]}`;
 
+  const ticketLink = ev.ticket_url || ev.url || '#';
+  const ticketLabel = ev.ticket_url ? 'Comprar bilhete →' : 'Ver bilhetes no agenda-porto.pt →';
   document.getElementById('sheet-content').innerHTML = `
     <div class="sheet-title">${ev.title}</div>
     <div class="sheet-meta">
@@ -826,13 +832,13 @@ function openDetail(id) {
       <span class="genre-badge" style="--badge-bg:${gc.bg};--badge-text:${gc.text};font-size:12px;padding:4px 10px">${ev.genre}</span>
       ${ev.intimate ? `<span class="intimate-tag" style="font-size:12px"><span class="intimate-dot"></span>Espaço íntimo</span>` : ''}
     </div>
-    <p class="sheet-desc">${ev.desc}</p>
+    ${ev.desc ? `<p class="sheet-desc">${ev.desc}</p>` : ''}
     <div class="sheet-info-row"><span class="sheet-info-label">Data</span><span class="sheet-info-val">${dateLabel}</span></div>
-    <div class="sheet-info-row"><span class="sheet-info-label">Hora</span><span class="sheet-info-val">${ev.time}</span></div>
+    ${ev.time ? `<div class="sheet-info-row"><span class="sheet-info-label">Hora</span><span class="sheet-info-val">${ev.time}</span></div>` : ''}
     <div class="sheet-info-row"><span class="sheet-info-label">Local</span><span class="sheet-info-val">${venue.name}</span></div>
     <div class="sheet-info-row"><span class="sheet-info-label">Capacidade</span><span class="sheet-info-val">${venue.cap}</span></div>
-    <div class="sheet-info-row"><span class="sheet-info-label">Entrada</span><span class="sheet-info-val">${ev.price}</span></div>
-    <button class="sheet-btn" onclick="openVenueUrl('${ev.url || venue.url}')">Ver no agenda-porto.pt →</button>
+    <div class="sheet-info-row"><span class="sheet-info-label">Entrada</span><span class="sheet-info-val">${ev.price || '—'}</span></div>
+    <button class="sheet-btn" onclick="openVenueUrl('${ticketLink}')">${ticketLabel}</button>
   `;
   document.getElementById('overlay').classList.add('open');
   document.body.style.overflow = 'hidden';

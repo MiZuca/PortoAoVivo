@@ -239,7 +239,40 @@ def _item_to_event(item: dict) -> dict | None:
     if not slug:
         return None
 
+    # Preço: tenta vários nomes de campo usados pelo bndlyr CMS
+    price = ""
+    for price_key in ("text_preco", "text_price", "text_entrada", "text_bilhete", "text_ticket_price"):
+        raw = item.get(price_key)
+        if not raw:
+            continue
+        if isinstance(raw, dict):
+            price = raw.get("pt") or raw.get("en") or raw.get("all") or ""
+        elif isinstance(raw, str):
+            price = raw
+        elif isinstance(raw, (int, float)):
+            price = f"{raw}€" if raw > 0 else "Entrada livre"
+        if price:
+            break
+    # Entrada gratuita sinalizada por boolean
+    if not price and item.get("boolean_entrada_livre"):
+        price = "Entrada livre"
+
+    # Link de bilheteira: tenta vários nomes de campo
+    ticket_url = ""
+    for tk_key in ("url_bilheteira", "url_bilhetes", "url_tickets", "url_ticket",
+                   "link_bilhetes", "link_compra", "url_comprar"):
+        raw = item.get(tk_key)
+        if not raw:
+            continue
+        if isinstance(raw, dict):
+            ticket_url = raw.get("url") or raw.get("en") or raw.get("all") or ""
+        elif isinstance(raw, str):
+            ticket_url = raw
+        if ticket_url:
+            break
+
     ev_id = re.sub(r"[^a-z0-9-]", "", slug)
+    event_url = f"https://www.agenda-porto.pt/en/evento/{slug}/"
     return {
         "id": ev_id,
         "title": title,
@@ -249,8 +282,10 @@ def _item_to_event(item: dict) -> dict | None:
         "venue_capacity": info["capacity"],
         "date": date_iso,
         "time": time_str,
+        "price": price,
+        "ticket_url": ticket_url,
         "type": "",
-        "url": f"https://www.agenda-porto.pt/en/evento/{slug}/",
+        "url": event_url,
         "intimate": info["capacity"] <= 200,
     }
 
@@ -317,7 +352,7 @@ def main():
     print("=" * 52)
 
     all_events = scrape_all()
-    all_events.sort(key=lambda e: (e["date"], e["venue"]))
+    all_events.sort(key=lambda e: (e["date"], e["time"] or "99:99", e["venue"]))
 
     seen, unique = set(), []
     for ev in all_events:
