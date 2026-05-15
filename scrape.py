@@ -97,80 +97,19 @@ def scrape_venue(venue_id, info):
     if not html:
         print("  ERRO: pagina inacessivel")
         return []
-
+    
+    # DEBUG: mostra primeiros links de evento encontrados
     soup = BeautifulSoup(html, "html.parser")
-    events = []
-
-    for link in soup.find_all("a", href=re.compile(r"^/en/evento/")):
-        title_el = (
-            link.find(class_=re.compile(r"event-?title", re.I))
-            or link.find("h2")
-            or link.find("h3")
-        )
-        if not title_el:
-            texts = [t.strip() for t in link.stripped_strings if len(t.strip()) > 3]
-            title_text = texts[0] if texts else ""
-        else:
-            title_text = title_el.get_text(strip=True)
-
-        if not title_text:
-            continue
-
-        sub_el = link.find(class_=re.compile(r"event-?sub", re.I))
-        subtitle = sub_el.get_text(strip=True) if sub_el else ""
-
-        day_el = link.find(class_=re.compile(r"\bday\b", re.I))
-        month_el = link.find(class_=re.compile(r"\bmonth\b", re.I))
-        date_iso = parse_date(
-            day_el.get_text(strip=True) if day_el else "",
-            month_el.get_text(strip=True) if month_el else "",
-        )
-
-        hour_el = link.find(class_=re.compile(r"\bhour\b", re.I))
-        time_str = hour_el.get_text(strip=True) if hour_el else None
-
-        section_el = link.find(class_=re.compile(r"section-?name", re.I))
-        format_el = link.find(class_=re.compile(r"format-?name", re.I))
-        section = section_el.get_text(strip=True) if section_el else ""
-        fmt = format_el.get_text(strip=True) if format_el else ""
-
-        s = section.lower()
-        f = fmt.lower()
-        is_music = (
-            "music" in s or "clubbing" in s or "musica" in s
-            or f in {"concert", "party", "show", "listening", "dj set", "concerto", "festa"}
-            or any(k in f for k in ("concert", "party", "dj", "listen"))
-        )
-        if not is_music:
-            continue
-
-        if not date_iso:
-            continue
-
-        # Filtro por título (ex: Understage dentro do Rivoli)
-        title_filter = info.get("title_filter")
-        if title_filter and title_filter.lower() not in title_text.lower():
-            continue
-
-        slug = link["href"].split("/evento/")[-1].strip("/")
-        ev_id = re.sub(r"[^a-z0-9-]", "", slug)
-
-        events.append({
-            "id": ev_id,
-            "title": title_text,
-            "subtitle": subtitle,
-            "venue_id": venue_id,
-            "venue": info["name"],
-            "venue_capacity": info["capacity"],
-            "date": date_iso,
-            "time": time_str,
-            "type": fmt,
-            "url": "https://www.agenda-porto.pt" + link["href"],
-            "intimate": info["capacity"] <= 200,
-        })
-
-    print(f"  {len(events)} eventos de musica encontrados")
-    return events
+    links = soup.find_all("a", href=re.compile(r"/evento/"))
+    print(f"  Links de evento encontrados: {len(links)}")
+    if links:
+        print(f"  Exemplo de link: {links[0]}")
+        print(f"  Classes no link: {links[0].get('class')}")
+        # Mostra todas as classes dentro do primeiro link
+        for el in links[0].find_all(True):
+            if el.get('class'):
+                print(f"    tag={el.name} class={el.get('class')} text={el.get_text(strip=True)[:50]}")
+    return []
 
 
 def main():
