@@ -34,9 +34,10 @@ VENUES = {
     },
     "understage": {
         "name": "Understage Rivoli",
-        "url": "https://www.agenda-porto.pt/en/local/understage/",
+        "url": "https://www.agenda-porto.pt/en/local/rivoli-theatre/",
         "capacity": 150,
         "color": "#34d399",
+        "title_filter": "understage",  # só eventos com "understage" no título
     },
 }
 
@@ -144,6 +145,11 @@ def scrape_venue(venue_id, info):
             continue
 
         if not date_iso:
+            continue
+
+        # Filtro por título (ex: Understage dentro do Rivoli)
+        title_filter = info.get("title_filter")
+        if title_filter and title_filter.lower() not in title_text.lower():
             continue
 
         slug = link["href"].split("/evento/")[-1].strip("/")
