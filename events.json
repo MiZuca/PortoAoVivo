@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-15T16:19:56Z",
-  "total": 26,
+  "updated_at": "2026-05-16T08:30:36Z",
+  "total": 24,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260515-anti-medo",
-      "title": "Anti-Medo",
-      "subtitle": "Eletroacoustic ambient beat trip",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-15",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260515-anti-medo/",
-      "intimate": true
-    },
-    {
-      "id": "brasa-1505",
-      "title": "Brasa",
-      "subtitle": "Lua + S4do + Runnan + Maju",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-15",
-      "time": "23:59",
-      "price": "6€ ",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/brasa-1505/",
-      "intimate": true
-    },
     {
       "id": "catarina-branco-bcc",
       "title": "Catarina Branco + BCC",
