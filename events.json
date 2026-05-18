@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-17T08:57:35Z",
-  "total": 22,
+  "updated_at": "2026-05-18T10:55:33Z",
+  "total": 23,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -252,6 +252,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260530-maquina-culona/",
+      "intimate": true
+    },
+    {
+      "id": "260604-ola-haas-silentide",
+      "title": "Ola Haas + Silentide",
+      "subtitle": "Concerto duplo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-04",
+      "time": "21:30",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260604-ola-haas-silentide/",
       "intimate": true
     },
     {
