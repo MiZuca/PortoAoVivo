@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-18T10:55:33Z",
-  "total": 23,
+  "updated_at": "2026-05-19T10:30:25Z",
+  "total": 21,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -117,21 +117,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/thispage-quermesse/",
-      "intimate": true
-    },
-    {
-      "id": "260522-hollaback",
-      "title": "Hollaback",
-      "subtitle": "Peter Castro e Slimcutz",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-22",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260522-hollaback/",
       "intimate": true
     },
     {
@@ -332,7 +317,7 @@
     {
       "id": "world-of-echo-de-arthur-russell",
       "title": "World of Echo, de Arthur Russell",
-      "subtitle": "Sessão de escuta + Projeção de filmagens de atuações",
+      "subtitle": "Listening Session + Screening de Performance Footage",
       "venue_id": "rca",
       "venue": "RCA — Radioclube Agramonte",
       "venue_capacity": 200,
@@ -342,21 +327,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/world-of-echo-de-arthur-russell/",
-      "intimate": true
-    },
-    {
-      "id": "hard-club-groundation",
-      "title": "Groundation",
-      "subtitle": "apresentam o disco Candle Burning",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-06-24",
-      "time": "21:30",
-      "price": "28€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/hard-club-groundation/",
       "intimate": true
     },
     {
