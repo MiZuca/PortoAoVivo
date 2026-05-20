@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-19T10:30:25Z",
-  "total": 21,
+  "updated_at": "2026-05-20T10:17:10Z",
+  "total": 27,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260519-porta-jazz-apresenta-joao-pedro-brandao-teresa-costa",
-      "title": "João Pedro Brandão + Teresa Costa",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-19",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260519-porta-jazz-apresenta-joao-pedro-brandao-teresa-costa/",
-      "intimate": true
-    },
     {
       "id": "260520-fado-xx",
       "title": "Fado com Miguel Bandeirinha",
@@ -117,6 +102,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/thispage-quermesse/",
+      "intimate": true
+    },
+    {
+      "id": "260522-hollaback",
+      "title": "Hollaback",
+      "subtitle": "Peter Castro e Slimcutz",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-05-22",
+      "time": "23:59",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260522-hollaback/",
       "intimate": true
     },
     {
@@ -255,6 +255,36 @@
       "intimate": true
     },
     {
+      "id": "260605-raia",
+      "title": "RAIA",
+      "subtitle": "Projeto-síntese do músico alentejano António Bexiga",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-05",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260605-raia/",
+      "intimate": true
+    },
+    {
+      "id": "260606-super-bock-super-nova",
+      "title": "Bad Tomato + Chat GRP + Sereias",
+      "subtitle": "Super Bock Super Nova",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-06",
+      "time": "22:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260606-super-bock-super-nova/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-the-ark-sessions",
       "title": "The Ark Sessions",
       "subtitle": "Música eletrónica industrial, dark e experimental",
@@ -300,6 +330,21 @@
       "intimate": true
     },
     {
+      "id": "260618-ocaso",
+      "title": "Ocaso",
+      "subtitle": "apresentam o seu primeiro álbum Projecto Ocaso",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-18",
+      "time": "21:30",
+      "price": "7€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260618-ocaso/",
+      "intimate": true
+    },
+    {
       "id": "yhwh-nailgun",
       "title": "YHWH Nailgun",
       "subtitle": "apresentam EP de estreia homónimo",
@@ -312,6 +357,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/yhwh-nailgun/",
+      "intimate": true
+    },
+    {
+      "id": "260619-parte-fraca",
+      "title": "Parte Fraca",
+      "subtitle": "Post punk, shoegaze, grunge e indie rock",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-19",
+      "time": "21:00",
+      "price": "6€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260619-parte-fraca/",
       "intimate": true
     },
     {
@@ -342,6 +402,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/groundation/",
+      "intimate": true
+    },
+    {
+      "id": "260625-aspirina-lord-of-confusion-hazing-lungs",
+      "title": "Lord Of Confusion + Hazing Lungs",
+      "subtitle": "Aspirina",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-25",
+      "time": "21:30",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260625-aspirina-lord-of-confusion-hazing-lungs/",
+      "intimate": true
+    },
+    {
+      "id": "260626-celso",
+      "title": "Celso",
+      "subtitle": "apresentam o seu segundo álbum Indiecorno",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-26",
+      "time": "21:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260626-celso/",
       "intimate": true
     }
   ]
