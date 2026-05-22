@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-21T10:29:36Z",
-  "total": 26,
+  "updated_at": "2026-05-22T10:14:59Z",
+  "total": 24,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260521-goldfish-kaseem-spin-the-skull",
-      "title": "Goldfish Kaseem + Spin the Skull",
-      "subtitle": "Rock&#39;n&#39;roll ",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-21",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260521-goldfish-kaseem-spin-the-skull/",
-      "intimate": true
-    },
-    {
-      "id": "concepcion-huerta",
-      "title": "Concepción Huerta",
-      "subtitle": "Concerto",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-05-21",
-      "time": "22:00",
-      "price": "10€ (pré-venda: 8€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/concepcion-huerta/",
-      "intimate": true
-    },
     {
       "id": "260522-jepards",
       "title": "Jepards",
