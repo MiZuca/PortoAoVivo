@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-23T08:57:14Z",
-  "total": 22,
+  "updated_at": "2026-05-24T09:13:09Z",
+  "total": 21,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260523-shuggah-lickurs",
-      "title": "Shuggah Lickurs",
-      "subtitle": "Êxitos da pop",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-23",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260523-shuggah-lickurs/",
-      "intimate": true
-    },
     {
       "id": "nao-se-passa-nada-as-segundas-2505",
       "title": "Cavala",
