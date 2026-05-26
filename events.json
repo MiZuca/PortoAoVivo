@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T11:03:46Z",
-  "total": 21,
+  "updated_at": "2026-05-26T10:40:15Z",
+  "total": 20,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "nao-se-passa-nada-as-segundas-2505",
-      "title": "Cavala",
-      "subtitle": "Não se passa nada às segundas",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-05-25",
-      "time": "19:00",
-      "price": "5€ (pré-venda), 7€ (na porta)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/nao-se-passa-nada-as-segundas-2505/",
-      "intimate": true
-    },
     {
       "id": "260526-porta-jazz-apresenta-joao-prospero-jose-vale",
       "title": "João Próspero + José Vale",
