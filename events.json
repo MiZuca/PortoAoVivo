@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-26T10:40:15Z",
-  "total": 20,
+  "updated_at": "2026-05-27T10:45:33Z",
+  "total": 19,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260526-porta-jazz-apresenta-joao-prospero-jose-vale",
-      "title": "João Próspero + José Vale",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-26",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260526-porta-jazz-apresenta-joao-prospero-jose-vale/",
-      "intimate": true
-    },
     {
       "id": "260527-femme-sessions-98",
       "title": "Femme Sessions #98",
