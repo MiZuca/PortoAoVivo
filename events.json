@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-27T10:45:33Z",
-  "total": 19,
+  "updated_at": "2026-05-28T10:44:01Z",
+  "total": 18,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260527-femme-sessions-98",
-      "title": "Femme Sessions #98",
-      "subtitle": "Ciclo de cinema no feminino",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-27",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260527-femme-sessions-98/",
-      "intimate": true
-    },
     {
       "id": "260528-shooting-daggers-uk-faul-gz",
       "title": "Shooting Daggers + Faul",
