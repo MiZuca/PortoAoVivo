@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-28T10:44:01Z",
-  "total": 18,
+  "updated_at": "2026-05-29T10:38:16Z",
+  "total": 30,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260528-shooting-daggers-uk-faul-gz",
-      "title": "Shooting Daggers + Faul",
-      "subtitle": "Queercore punk",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-28",
-      "time": "21:30",
-      "price": "9€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260528-shooting-daggers-uk-faul-gz/",
-      "intimate": true
-    },
-    {
-      "id": "bonanca-malva",
-      "title": "bonança + Malva",
-      "subtitle": "Concertos",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-05-28",
-      "time": "22:00",
-      "price": "9€ (pré-venda: 7€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/bonanca-malva/",
-      "intimate": true
-    },
     {
       "id": "260529-velhote-do-carmo",
       "title": "Velhote do Carmo",
@@ -105,6 +75,36 @@
       "intimate": true
     },
     {
+      "id": "260602-porta-jazz-apresenta-josue-jose-pedro-coelho",
+      "title": "Josué + José Pedro Coelho",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-02",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260602-porta-jazz-apresenta-josue-jose-pedro-coelho/",
+      "intimate": true
+    },
+    {
+      "id": "260603-tropiku-tropicaustica-kebraku",
+      "title": "Tropiku",
+      "subtitle": "Tropicáustica + Kebraku",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-03",
+      "time": "23:59",
+      "price": "6€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260603-tropiku-tropicaustica-kebraku/",
+      "intimate": true
+    },
+    {
       "id": "260604-ola-haas-silentide",
       "title": "Ola Haas + Silentide",
       "subtitle": "Concerto duplo",
@@ -132,6 +132,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260605-raia/",
+      "intimate": true
+    },
+    {
+      "id": "260605-bar-dancante",
+      "title": "Bar Dançante",
+      "subtitle": "Mike El Nite e João Não",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-05",
+      "time": "23:59",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260605-bar-dancante/",
       "intimate": true
     },
     {
@@ -180,6 +195,36 @@
       "intimate": true
     },
     {
+      "id": "260609-porta-jazz-apresenta-hugo-ferreira-jozias-de-leon",
+      "title": "Hugo Ferreira + Jozias de Leon",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-09",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260609-porta-jazz-apresenta-hugo-ferreira-jozias-de-leon/",
+      "intimate": true
+    },
+    {
+      "id": "260610-kabare-kamikaze",
+      "title": "Kabaré Kamikaze",
+      "subtitle": "",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-10",
+      "time": "21:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260610-kabare-kamikaze/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-krisiun",
       "title": "Krisiun",
       "subtitle": "Trio brasileiro de death metal",
@@ -192,6 +237,66 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hard-club-krisiun/",
+      "intimate": true
+    },
+    {
+      "id": "260612-dj-a-boy-named-sue",
+      "title": "A Boy Named Sue",
+      "subtitle": "DJ set",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-12",
+      "time": "23:59",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260612-dj-a-boy-named-sue/",
+      "intimate": true
+    },
+    {
+      "id": "260613-beyonce-fest",
+      "title": "Beyoncé Fest",
+      "subtitle": "Noite dedicada à Queen B",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-13",
+      "time": "23:59",
+      "price": "€8",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260613-beyonce-fest/",
+      "intimate": true
+    },
+    {
+      "id": "260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa",
+      "title": "Ana Luisa Marques + Guilherme Lapa",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-16",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa/",
+      "intimate": true
+    },
+    {
+      "id": "260617-fado-xxi",
+      "title": "Fado com Miguel Bandeirinha",
+      "subtitle": "Serão mensal",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-17",
+      "time": "21:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260617-fado-xxi/",
       "intimate": true
     },
     {
@@ -255,6 +360,36 @@
       "intimate": true
     },
     {
+      "id": "260619-batidao-baile-funk",
+      "title": "Batidão",
+      "subtitle": "Baile Funk",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-19",
+      "time": "23:59",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260619-batidao-baile-funk/",
+      "intimate": true
+    },
+    {
+      "id": "260620-dr-love-the-matchmaker-party",
+      "title": "The Matchmaker Party",
+      "subtitle": "com Dr Love",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-20",
+      "time": "23:59",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260620-dr-love-the-matchmaker-party/",
+      "intimate": true
+    },
+    {
       "id": "groundation",
       "title": "Groundation",
       "subtitle": "Banda de reggae californiana apresenta Candle Burning",
@@ -297,6 +432,51 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260626-celso/",
+      "intimate": true
+    },
+    {
+      "id": "260626-baile-do-tuim",
+      "title": "Baile do Tuim",
+      "subtitle": "Funk de São Paulo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-26",
+      "time": "23:59",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260626-baile-do-tuim/",
+      "intimate": true
+    },
+    {
+      "id": "260627-purple-hazin",
+      "title": "Purple Hazin",
+      "subtitle": "por Monster Jinx",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-27",
+      "time": "23:59",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260627-purple-hazin/",
+      "intimate": true
+    },
+    {
+      "id": "260630-porta-jazz-apresenta-joao-rocha-rui-catarino",
+      "title": "João Rocha + Rui Catarino",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-30",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260630-porta-jazz-apresenta-joao-rocha-rui-catarino/",
       "intimate": true
     }
   ]
