@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-29T10:38:16Z",
-  "total": 30,
+  "updated_at": "2026-05-30T09:08:54Z",
+  "total": 28,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260529-velhote-do-carmo",
-      "title": "Velhote do Carmo",
-      "subtitle": "antecipa o disco de estreia TRANSPARENTE",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-29",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260529-velhote-do-carmo/",
-      "intimate": true
-    },
-    {
-      "id": "260529-baddies",
-      "title": "Baddies",
-      "subtitle": "Pyrats ",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-29",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260529-baddies/",
-      "intimate": true
-    },
     {
       "id": "260530-maquina-culona",
       "title": "Máquina Culona",
@@ -212,7 +182,7 @@
     {
       "id": "260610-kabare-kamikaze",
       "title": "Kabaré Kamikaze",
-      "subtitle": "",
+      "subtitle": "Cabaré à Mesa",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -263,7 +233,7 @@
       "venue_capacity": 150,
       "date": "2026-06-13",
       "time": "23:59",
-      "price": "€8",
+      "price": "8€",
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260613-beyonce-fest/",
@@ -361,8 +331,8 @@
     },
     {
       "id": "260619-batidao-baile-funk",
-      "title": "Batidão",
-      "subtitle": "Baile Funk",
+      "title": "Batidão Baile Funk",
+      "subtitle": "",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
