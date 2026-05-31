@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-30T09:08:54Z",
-  "total": 28,
+  "updated_at": "2026-05-31T09:41:00Z",
+  "total": 27,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260530-maquina-culona",
-      "title": "Máquina Culona",
-      "subtitle": "Música urbana e avant-pop espanhola",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-05-30",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260530-maquina-culona/",
-      "intimate": true
-    },
     {
       "id": "260602-porta-jazz-apresenta-josue-jose-pedro-coelho",
       "title": "Josué + José Pedro Coelho",
