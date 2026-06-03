@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-02T11:11:23Z",
-  "total": 27,
+  "updated_at": "2026-06-03T11:50:05Z",
+  "total": 26,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260602-porta-jazz-apresenta-josue-jose-pedro-coelho",
-      "title": "Josué + José Pedro Coelho",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-02",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260602-porta-jazz-apresenta-josue-jose-pedro-coelho/",
-      "intimate": true
-    },
     {
       "id": "260603-tropiku-tropicaustica-kebraku",
       "title": "Tropiku",
