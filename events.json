@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-03T11:50:05Z",
-  "total": 26,
+  "updated_at": "2026-06-04T10:32:36Z",
+  "total": 25,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260603-tropiku-tropicaustica-kebraku",
-      "title": "Tropiku",
-      "subtitle": "Tropicáustica + Kebraku",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-03",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260603-tropiku-tropicaustica-kebraku/",
-      "intimate": true
-    },
     {
       "id": "260604-ola-haas-silentide",
       "title": "Ola Haas + Silentide",
