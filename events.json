@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-04T10:32:36Z",
-  "total": 25,
+  "updated_at": "2026-06-05T10:40:10Z",
+  "total": 24,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260604-ola-haas-silentide",
-      "title": "Ola Haas + Silentide",
-      "subtitle": "Concerto duplo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-04",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260604-ola-haas-silentide/",
-      "intimate": true
-    },
     {
       "id": "260605-raia",
       "title": "RAIA",
@@ -106,8 +91,8 @@
     },
     {
       "id": "7o-aniversario-eastern-nurseries",
-      "title": "7.º Aniversário da Eastern Nurseries",
-      "subtitle": "Vanity Productions & Emma Acs + Burning Pyre",
+      "title": "Vanity Productions &amp; Emma Acs + Burning Pyre",
+      "subtitle": "7.º Aniversário da Eastern Nurseries",
       "venue_id": "rca",
       "venue": "RCA — Radioclube Agramonte",
       "venue_capacity": 200,
