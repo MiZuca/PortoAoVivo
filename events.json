@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-05T10:40:10Z",
-  "total": 24,
+  "updated_at": "2026-06-06T09:16:18Z",
+  "total": 22,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260605-raia",
-      "title": "RAIA",
-      "subtitle": "Projeto-síntese do músico alentejano António Bexiga",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-05",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260605-raia/",
-      "intimate": true
-    },
-    {
-      "id": "260605-bar-dancante",
-      "title": "Bar Dançante",
-      "subtitle": "Mike El Nite e João Não",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-05",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260605-bar-dancante/",
-      "intimate": true
-    },
     {
       "id": "260606-super-bock-super-nova",
       "title": "Bad Tomato + Chat GRP + Sereias",
