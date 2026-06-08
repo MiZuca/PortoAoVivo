@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-07T09:55:22Z",
-  "total": 20,
+  "updated_at": "2026-06-08T11:48:43Z",
+  "total": 19,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "7o-aniversario-eastern-nurseries",
-      "title": "Vanity Productions &amp; Emma Acs + Burning Pyre",
-      "subtitle": "7.º Aniversário da Eastern Nurseries",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-06-07",
-      "time": "19:00",
-      "price": "10€ (pré-venda: 8€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/7o-aniversario-eastern-nurseries/",
-      "intimate": true
-    },
     {
       "id": "260609-porta-jazz-apresenta-hugo-ferreira-jozias-de-leon",
       "title": "Hugo Ferreira + Jozias de Leon",
