@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-08T11:48:43Z",
-  "total": 19,
+  "updated_at": "2026-06-09T10:26:31Z",
+  "total": 18,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -117,21 +117,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa/",
-      "intimate": true
-    },
-    {
-      "id": "260617-fado-xxi",
-      "title": "Fado com Miguel Bandeirinha",
-      "subtitle": "Serão mensal",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-17",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260617-fado-xxi/",
       "intimate": true
     },
     {
