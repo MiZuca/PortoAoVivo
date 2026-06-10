@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-09T10:26:31Z",
-  "total": 18,
+  "updated_at": "2026-06-10T10:47:44Z",
+  "total": 20,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260609-porta-jazz-apresenta-hugo-ferreira-jozias-de-leon",
-      "title": "Hugo Ferreira + Jozias de Leon",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-09",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260609-porta-jazz-apresenta-hugo-ferreira-jozias-de-leon/",
-      "intimate": true
-    },
     {
       "id": "260610-kabare-kamikaze",
       "title": "Kabaré Kamikaze",
@@ -117,6 +102,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa/",
+      "intimate": true
+    },
+    {
+      "id": "260617-fado-xxi",
+      "title": "Fado com Miguel Bandeirinha",
+      "subtitle": "Serão mensal",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-17",
+      "time": "21:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260617-fado-xxi/",
       "intimate": true
     },
     {
@@ -297,6 +297,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260630-porta-jazz-apresenta-joao-rocha-rui-catarino/",
+      "intimate": true
+    },
+    {
+      "id": "hard-club-elena-rose",
+      "title": "Elena Rose",
+      "subtitle": "Pop latino e reggaeton",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-07-03",
+      "time": "21:00",
+      "price": "40€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-club-elena-rose/",
+      "intimate": true
+    },
+    {
+      "id": "hard-club-angelus-apatrida-vio-lence",
+      "title": "Angelus Apatrida + Vio-lence",
+      "subtitle": "Trash metal",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-07-24",
+      "time": "21:00",
+      "price": "25€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-club-angelus-apatrida-vio-lence/",
       "intimate": true
     }
   ]
