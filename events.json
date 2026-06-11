@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-10T10:47:44Z",
-  "total": 20,
+  "updated_at": "2026-06-11T11:16:55Z",
+  "total": 19,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260610-kabare-kamikaze",
-      "title": "Kabaré Kamikaze",
-      "subtitle": "Cabaré à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-10",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260610-kabare-kamikaze/",
-      "intimate": true
-    },
     {
       "id": "hard-club-krisiun",
       "title": "Krisiun",
