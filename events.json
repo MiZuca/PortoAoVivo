@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-11T11:16:55Z",
-  "total": 19,
+  "updated_at": "2026-06-12T10:56:24Z",
+  "total": 18,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "hard-club-krisiun",
-      "title": "Krisiun",
-      "subtitle": "Trio brasileiro de death metal",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-06-11",
-      "time": "21:00",
-      "price": "25€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/hard-club-krisiun/",
-      "intimate": true
-    },
     {
       "id": "260612-dj-a-boy-named-sue",
       "title": "A Boy Named Sue",
