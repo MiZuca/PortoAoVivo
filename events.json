@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-13T09:49:40Z",
-  "total": 17,
+  "updated_at": "2026-06-14T10:19:00Z",
+  "total": 16,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260613-beyonce-fest",
-      "title": "Beyoncé Fest",
-      "subtitle": "Noite dedicada à Queen B",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-13",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260613-beyonce-fest/",
-      "intimate": true
-    },
     {
       "id": "260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa",
       "title": "Ana Luisa Marques + Guilherme Lapa",
