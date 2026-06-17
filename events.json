@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-16T12:01:26Z",
-  "total": 16,
+  "updated_at": "2026-06-17T11:26:50Z",
+  "total": 15,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa",
-      "title": "Ana Luísa Marques + Guilherme Lapa",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-16",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260616-porta-jazz-apresenta-ana-luisa-marques-guilherme-lapa/",
-      "intimate": true
-    },
     {
       "id": "260617-fado-xxi",
       "title": "Fado com Miguel Bandeirinha",
@@ -87,21 +72,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/yhwh-nailgun/",
-      "intimate": true
-    },
-    {
-      "id": "260619-parte-fraca",
-      "title": "Parte Fraca",
-      "subtitle": "Post punk, shoegaze, grunge e indie rock",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-19",
-      "time": "21:00",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260619-parte-fraca/",
       "intimate": true
     },
     {
@@ -222,6 +192,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260627-purple-hazin/",
+      "intimate": true
+    },
+    {
+      "id": "jacketx",
+      "title": "Jacketx",
+      "subtitle": "Não se passa nada às segundas",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-06-29",
+      "time": "19:00",
+      "price": "7€ (pré-venda: 5€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/jacketx/",
       "intimate": true
     },
     {
