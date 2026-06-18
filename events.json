@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T11:26:50Z",
+  "updated_at": "2026-06-18T11:04:22Z",
   "total": 15,
   "venues": {
     "maus-habitos": {
@@ -30,21 +30,6 @@
   },
   "events": [
     {
-      "id": "260617-fado-xxi",
-      "title": "Fado com Miguel Bandeirinha",
-      "subtitle": "Serão mensal",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-17",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260617-fado-xxi/",
-      "intimate": true
-    },
-    {
       "id": "260618-ocaso",
       "title": "Ocaso",
       "subtitle": "apresentam o seu primeiro álbum Projecto Ocaso",
@@ -72,6 +57,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/yhwh-nailgun/",
+      "intimate": true
+    },
+    {
+      "id": "260619-parte-fraca",
+      "title": "Parte Fraca",
+      "subtitle": "Post punk, shoegaze, grunge e indie rock",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-06-19",
+      "time": "21:00",
+      "price": "6€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260619-parte-fraca/",
       "intimate": true
     },
     {
