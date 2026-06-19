@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T11:04:22Z",
-  "total": 15,
+  "updated_at": "2026-06-19T11:12:04Z",
+  "total": 13,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260618-ocaso",
-      "title": "Ocaso",
-      "subtitle": "apresentam o seu primeiro álbum Projecto Ocaso",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-18",
-      "time": "21:30",
-      "price": "7€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260618-ocaso/",
-      "intimate": true
-    },
-    {
-      "id": "yhwh-nailgun",
-      "title": "YHWH Nailgun",
-      "subtitle": "apresentam EP de estreia homónimo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-06-18",
-      "time": "22:00",
-      "price": "15€ (pré-venda: 12€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/yhwh-nailgun/",
-      "intimate": true
-    },
     {
       "id": "260619-parte-fraca",
       "title": "Parte Fraca",
