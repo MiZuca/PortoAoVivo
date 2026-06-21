@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-20T09:56:50Z",
-  "total": 10,
+  "updated_at": "2026-06-21T10:24:46Z",
+  "total": 9,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260620-dr-love-the-matchmaker-party",
-      "title": "The Matchmaker Party",
-      "subtitle": "com Dr Love",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-20",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260620-dr-love-the-matchmaker-party/",
-      "intimate": true
-    },
     {
       "id": "groundation",
       "title": "Groundation",
