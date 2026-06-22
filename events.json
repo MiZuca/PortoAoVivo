@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-21T10:24:46Z",
-  "total": 9,
+  "updated_at": "2026-06-22T12:41:44Z",
+  "total": 17,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -135,6 +135,21 @@
       "intimate": true
     },
     {
+      "id": "260702-curumin",
+      "title": "Curumin",
+      "subtitle": "Voz, violão e MPC",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-02",
+      "time": "21:30",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260702-curumin/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-elena-rose",
       "title": "Elena Rose",
       "subtitle": "Pop latino e reggaeton",
@@ -150,6 +165,66 @@
       "intimate": true
     },
     {
+      "id": "260703-acid-acid",
+      "title": "ACID ACID",
+      "subtitle": "apresenta o disco The Radio Under The Stars",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-03",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260703-acid-acid/",
+      "intimate": true
+    },
+    {
+      "id": "260709-reforma-agraria-manga-cava",
+      "title": "Reforma Agrária + Manga Cava",
+      "subtitle": "Concerto duplo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-09",
+      "time": "21:30",
+      "price": "7€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260709-reforma-agraria-manga-cava/",
+      "intimate": true
+    },
+    {
+      "id": "260716-mannequim-death-sqaud-au-common-ideal-uk",
+      "title": "Mannequin Death Squad +  Common Ideal",
+      "subtitle": "Concerto duplo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-16",
+      "time": "21:30",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260716-mannequim-death-sqaud-au-common-ideal-uk/",
+      "intimate": true
+    },
+    {
+      "id": "260717-gonkallo",
+      "title": "Gonkallo",
+      "subtitle": "Punk-emo-tuga-malcriado",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-17",
+      "time": "21:00",
+      "price": "5€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260717-gonkallo/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-angelus-apatrida-vio-lence",
       "title": "Angelus Apatrida + Vio-lence",
       "subtitle": "Trash metal",
@@ -162,6 +237,51 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hard-club-angelus-apatrida-vio-lence/",
+      "intimate": true
+    },
+    {
+      "id": "260724-tagua-tagua-andamp-papisa",
+      "title": "Tagua Tagua & Papisa",
+      "subtitle": "Concerto em duo que reimagina ambos os repertórios",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-24",
+      "time": "21:00",
+      "price": "12€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260724-tagua-tagua-andamp-papisa/",
+      "intimate": true
+    },
+    {
+      "id": "260730-albatroz-soda-caustica",
+      "title": "Albatroz + Soda Cáustica",
+      "subtitle": "Concerto duplo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-30",
+      "time": "21:30",
+      "price": "5€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260730-albatroz-soda-caustica/",
+      "intimate": true
+    },
+    {
+      "id": "260731-xarau",
+      "title": "Xarau",
+      "subtitle": " apresenta o espetáculo Urdimbre",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-31",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260731-xarau/",
       "intimate": true
     }
   ]
