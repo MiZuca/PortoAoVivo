@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-25T10:01:16Z",
-  "total": 27,
+  "updated_at": "2026-06-26T10:12:59Z",
+  "total": 30,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260625-aspirina-lord-of-confusion-hazing-lungs",
-      "title": "Lord Of Confusion + Hazing Lungs",
-      "subtitle": "Aspirina",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-25",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260625-aspirina-lord-of-confusion-hazing-lungs/",
-      "intimate": true
-    },
     {
       "id": "260626-celso",
       "title": "Celso",
@@ -195,6 +180,21 @@
       "intimate": true
     },
     {
+      "id": "260707-porta-jazz-apresenta-mariana-vergueiro-pedro-neves",
+      "title": "Mariana Vergueiro + Pedro Neves",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-07",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260707-porta-jazz-apresenta-mariana-vergueiro-pedro-neves/",
+      "intimate": true
+    },
+    {
       "id": "260708-kabare-kamikaze",
       "title": "Kabaré Kamikaze",
       "subtitle": "Cabaré contemporâneo e absurdo promovido pela Produção Réptil",
@@ -252,6 +252,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260711-screwed/",
+      "intimate": true
+    },
+    {
+      "id": "260714-porta-jazz-apresenta-josue-oriol-cardoso",
+      "title": "Josué + Oriol Cardoso",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-14",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260714-porta-jazz-apresenta-josue-oriol-cardoso/",
       "intimate": true
     },
     {
@@ -330,6 +345,21 @@
       "intimate": true
     },
     {
+      "id": "260721-porta-jazz-apresenta-xavier-nunes-pedro-sequeira",
+      "title": "Xavier Nunes + Pedro Sequeira",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-21",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260721-porta-jazz-apresenta-xavier-nunes-pedro-sequeira/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-angelus-apatrida-vio-lence",
       "title": "Angelus Apatrida + Vio-lence",
       "subtitle": "Trash metal",
@@ -387,6 +417,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260725-shuggah-lickurs/",
+      "intimate": true
+    },
+    {
+      "id": "260728-porta-jazz-apresenta-pedro-molina-ricardo-moreira",
+      "title": "Pedro Molina + Ricardo Moreira",
+      "subtitle": "Porta Jazz apresenta",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-28",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260728-porta-jazz-apresenta-pedro-molina-ricardo-moreira/",
       "intimate": true
     },
     {
