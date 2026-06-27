@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-26T10:12:59Z",
-  "total": 30,
+  "updated_at": "2026-06-27T09:21:02Z",
+  "total": 29,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -30,33 +30,18 @@
   },
   "events": [
     {
-      "id": "260626-celso",
-      "title": "Celso",
-      "subtitle": "apresentam o seu segundo álbum Indiecorno",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-26",
-      "time": "21:00",
-      "price": "10€",
+      "id": "mister-teaser-yuuki",
+      "title": "Mister Teaser + Yuuki",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-06-27",
+      "time": "22:00",
+      "price": "",
       "ticket_url": "",
       "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260626-celso/",
-      "intimate": true
-    },
-    {
-      "id": "260626-baile-do-tuim",
-      "title": "Baile do Tuim",
-      "subtitle": "Funk de São Paulo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-26",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260626-baile-do-tuim/",
+      "url": "https://www.agenda-porto.pt/en/evento/mister-teaser-yuuki/",
       "intimate": true
     },
     {
