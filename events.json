@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-27T09:21:02Z",
-  "total": 29,
+  "updated_at": "2026-06-28T09:51:39Z",
+  "total": 27,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "mister-teaser-yuuki",
-      "title": "Mister Teaser + Yuuki",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-06-27",
-      "time": "22:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/mister-teaser-yuuki/",
-      "intimate": true
-    },
-    {
-      "id": "260627-purple-hazin",
-      "title": "Purple Hazin",
-      "subtitle": "por Monster Jinx",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-27",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260627-purple-hazin/",
-      "intimate": true
-    },
     {
       "id": "jacketx",
       "title": "Jacketx",
