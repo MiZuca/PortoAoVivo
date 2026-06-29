@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-28T09:51:39Z",
-  "total": 27,
+  "updated_at": "2026-06-29T11:52:13Z",
+  "total": 28,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -312,6 +312,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260721-porta-jazz-apresenta-xavier-nunes-pedro-sequeira/",
+      "intimate": true
+    },
+    {
+      "id": "260723-aspirina-98-axe-nopath",
+      "title": "Aspirina: 98 AxE + NoPath",
+      "subtitle": "Punk hardcore",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-07-23",
+      "time": "21:30",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260723-aspirina-98-axe-nopath/",
       "intimate": true
     },
     {
