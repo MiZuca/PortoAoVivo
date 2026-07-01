@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-30T10:22:43Z",
-  "total": 27,
+  "updated_at": "2026-07-01T10:37:00Z",
+  "total": 28,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260630-porta-jazz-apresenta-joao-rocha-rui-catarino",
-      "title": "João Rocha + Rui Catarino",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-06-30",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260630-porta-jazz-apresenta-joao-rocha-rui-catarino/",
-      "intimate": true
-    },
     {
       "id": "260702-curumin",
       "title": "Curumin",
@@ -105,6 +90,21 @@
       "intimate": true
     },
     {
+      "id": "alcabala-na-piscina",
+      "title": "Alcabala",
+      "subtitle": "Concertos na Piscina x Musa",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-07-04",
+      "time": "20:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/alcabala-na-piscina/",
+      "intimate": true
+    },
+    {
       "id": "260704-gin-party-soundsystem",
       "title": "Gin Party Soundsystem",
       "subtitle": "Uma espécie de dia da criança em caps lock",
@@ -117,6 +117,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260704-gin-party-soundsystem/",
+      "intimate": true
+    },
+    {
+      "id": "arianna-casellas-e-kaue-na-piscina",
+      "title": "Arianna Casellas e Kauê",
+      "subtitle": "Concerto na Piscina x Musa",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-07-07",
+      "time": "20:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/arianna-casellas-e-kaue-na-piscina/",
       "intimate": true
     },
     {
