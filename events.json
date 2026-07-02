@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-01T10:37:00Z",
-  "total": 28,
+  "updated_at": "2026-07-02T09:50:49Z",
+  "total": 30,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -122,7 +122,7 @@
     {
       "id": "arianna-casellas-e-kaue-na-piscina",
       "title": "Arianna Casellas e Kauê",
-      "subtitle": "Concerto na Piscina x Musa",
+      "subtitle": "Concertos na Piscina x Musa",
       "venue_id": "rca",
       "venue": "RCA — Radioclube Agramonte",
       "venue_capacity": 200,
@@ -285,6 +285,21 @@
       "intimate": true
     },
     {
+      "id": "ocenpsiea-1782906466956",
+      "title": "OCENPSIEA",
+      "subtitle": "Concertos na Piscina x Musa",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-07-18",
+      "time": "20:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/ocenpsiea-1782906466956/",
+      "intimate": true
+    },
+    {
       "id": "260718-maquina-culona",
       "title": "Máquina Culona",
       "subtitle": "Música urbana e avant-pop espanhola",
@@ -372,6 +387,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260724-hollaback/",
+      "intimate": true
+    },
+    {
+      "id": "glass-glass",
+      "title": "Glass Glass",
+      "subtitle": "Concertos na Piscina x Musa",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-07-25",
+      "time": "20:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/glass-glass/",
       "intimate": true
     },
     {
