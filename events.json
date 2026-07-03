@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-02T09:50:49Z",
-  "total": 30,
+  "updated_at": "2026-07-03T09:48:56Z",
+  "total": 29,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260702-curumin",
-      "title": "Curumin",
-      "subtitle": "Voz, violão e MPC",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-02",
-      "time": "21:30",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260702-curumin/",
-      "intimate": true
-    },
     {
       "id": "hard-club-elena-rose",
       "title": "Elena Rose",
