@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-03T09:48:56Z",
-  "total": 29,
+  "updated_at": "2026-07-04T09:12:36Z",
+  "total": 26,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,51 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "hard-club-elena-rose",
-      "title": "Elena Rose",
-      "subtitle": "Pop latino e reggaeton",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-07-03",
-      "time": "21:00",
-      "price": "40€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/hard-club-elena-rose/",
-      "intimate": true
-    },
-    {
-      "id": "260703-acid-acid",
-      "title": "ACID ACID",
-      "subtitle": "apresenta o disco The Radio Under The Stars",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-03",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260703-acid-acid/",
-      "intimate": true
-    },
-    {
-      "id": "260703-the-greatest-tits",
-      "title": "The Greatest Tits",
-      "subtitle": "Organizado por The Ema Thomas",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-03",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260703-the-greatest-tits/",
-      "intimate": true
-    },
     {
       "id": "alcabala-na-piscina",
       "title": "Alcabala",
