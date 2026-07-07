@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T11:20:46Z",
+  "updated_at": "2026-07-07T10:17:25Z",
   "total": 24,
   "venues": {
     "maus-habitos": {
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "arianna-casellas-e-kaue-na-piscina",
-      "title": "Arianna Casellas e Kauê",
-      "subtitle": "Concertos na Piscina x Musa",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-07-07",
-      "time": "20:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/arianna-casellas-e-kaue-na-piscina/",
-      "intimate": true
-    },
     {
       "id": "260707-porta-jazz-apresenta-mariana-vergueiro-pedro-neves",
       "title": "Mariana Vergueiro + Pedro Neves",
@@ -102,6 +87,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260710-brasa/",
+      "intimate": true
+    },
+    {
+      "id": "arianna-casellas-e-kaue-na-piscina",
+      "title": "Arianna Casellas e Kauê",
+      "subtitle": "Concertos na Piscina x Musa",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-07-11",
+      "time": "20:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/arianna-casellas-e-kaue-na-piscina/",
       "intimate": true
     },
     {
