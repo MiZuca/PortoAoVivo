@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-08T09:19:47Z",
-  "total": 23,
+  "updated_at": "2026-07-10T10:13:42Z",
+  "total": 22,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260708-kabare-kamikaze",
-      "title": "Kabaré Kamikaze",
-      "subtitle": "Cabaré contemporâneo e absurdo promovido pela Produção Réptil",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-08",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260708-kabare-kamikaze/",
-      "intimate": true
-    },
-    {
-      "id": "260709-reforma-agraria-manga-cava",
-      "title": "Reforma Agrária + Manga Cava",
-      "subtitle": "Concerto duplo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-09",
-      "time": "21:30",
-      "price": "7€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260709-reforma-agraria-manga-cava/",
-      "intimate": true
-    },
     {
       "id": "260710-brasa",
       "title": "Brasa",
@@ -372,6 +342,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260731-as-viagens-de-ohxala/",
+      "intimate": true
+    },
+    {
+      "id": "hard-club-beto-guedes",
+      "title": "Beto Guedes",
+      "subtitle": "assinala 50 anos de carreira",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-09-26",
+      "time": "20:00",
+      "price": "38€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-club-beto-guedes/",
       "intimate": true
     }
   ]
