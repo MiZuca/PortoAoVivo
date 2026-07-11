@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-10T10:13:42Z",
-  "total": 22,
+  "updated_at": "2026-07-11T08:41:48Z",
+  "total": 21,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260710-brasa",
-      "title": "Brasa",
-      "subtitle": "Baile rave queer",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-10",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260710-brasa/",
-      "intimate": true
-    },
     {
       "id": "arianna-casellas-e-kaue-na-piscina",
       "title": "Arianna Casellas e Kauê",
