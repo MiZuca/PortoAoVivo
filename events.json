@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-11T08:41:48Z",
-  "total": 21,
+  "updated_at": "2026-07-12T08:57:23Z",
+  "total": 19,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "arianna-casellas-e-kaue-na-piscina",
-      "title": "Arianna Casellas e Kauê",
-      "subtitle": "Concertos na Piscina x Musa",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-07-11",
-      "time": "20:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/arianna-casellas-e-kaue-na-piscina/",
-      "intimate": true
-    },
-    {
-      "id": "260711-screwed",
-      "title": "Screwed",
-      "subtitle": "SlimCutz",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-11",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260711-screwed/",
-      "intimate": true
-    },
     {
       "id": "260714-porta-jazz-apresenta-josue-oriol-cardoso",
       "title": "Josué + Oriol Cardoso",
