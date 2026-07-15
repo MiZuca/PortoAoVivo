@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-14T08:57:44Z",
-  "total": 19,
+  "updated_at": "2026-07-15T09:04:25Z",
+  "total": 18,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260714-porta-jazz-apresenta-josue-oriol-cardoso",
-      "title": "Josué + Oriol Cardoso",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-14",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260714-porta-jazz-apresenta-josue-oriol-cardoso/",
-      "intimate": true
-    },
     {
       "id": "260715-fado",
       "title": "Fado com Miguel Bandeirinha",
