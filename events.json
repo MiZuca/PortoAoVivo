@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-15T09:04:25Z",
-  "total": 18,
+  "updated_at": "2026-07-16T09:07:25Z",
+  "total": 17,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260715-fado",
-      "title": "Fado com Miguel Bandeirinha",
-      "subtitle": "Serão mensal",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-15",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260715-fado/",
-      "intimate": true
-    },
     {
       "id": "260716-mannequim-death-sqaud-au-common-ideal-uk",
       "title": "Mannequin Death Squad +  Common Ideal",
