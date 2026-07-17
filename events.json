@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-16T09:07:25Z",
-  "total": 17,
+  "updated_at": "2026-07-17T09:02:46Z",
+  "total": 16,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260716-mannequim-death-sqaud-au-common-ideal-uk",
-      "title": "Mannequin Death Squad +  Common Ideal",
-      "subtitle": "Concerto duplo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-16",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260716-mannequim-death-sqaud-au-common-ideal-uk/",
-      "intimate": true
-    },
     {
       "id": "260717-gonkallo",
       "title": "Gonkallo",
