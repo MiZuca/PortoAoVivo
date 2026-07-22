@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-21T09:22:04Z",
-  "total": 12,
+  "updated_at": "2026-07-22T09:20:56Z",
+  "total": 11,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260721-porta-jazz-apresenta-xavier-nunes-pedro-sequeira",
-      "title": "Xavier Nunes + Pedro Sequeira",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-21",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260721-porta-jazz-apresenta-xavier-nunes-pedro-sequeira/",
-      "intimate": true
-    },
     {
       "id": "260723-aspirina-98-axe-nopath",
       "title": "Aspirina: 98 AxE + NoPath",
