@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-23T09:17:16Z",
-  "total": 20,
+  "updated_at": "2026-07-24T09:14:16Z",
+  "total": 19,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260723-aspirina-98-axe-nopath",
-      "title": "Aspirina: 98 AxE + NoPath",
-      "subtitle": "Punk hardcore",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-23",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260723-aspirina-98-axe-nopath/",
-      "intimate": true
-    },
     {
       "id": "hard-club-angelus-apatrida-vio-lence",
       "title": "Angelus Apatrida + Vio-lence",
@@ -181,7 +166,7 @@
     },
     {
       "id": "260802-brasa-na-lage",
-      "title": "BRASA NA LAGE",
+      "title": "Brasa na Lage",
       "subtitle": "",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
@@ -197,7 +182,7 @@
     {
       "id": "260807-baile-do-tuim",
       "title": "Baile do Tuim",
-      "subtitle": "",
+      "subtitle": "Inspirado no funk de São Paulo",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -212,7 +197,7 @@
     {
       "id": "260808-beyonce-fest",
       "title": "Beyoncé Fest",
-      "subtitle": "",
+      "subtitle": "Noite dedicada à Queen B",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -227,7 +212,7 @@
     {
       "id": "260814-batidao-baile-funk",
       "title": "Batidão Baile Funk",
-      "subtitle": "Pyrats e Kebraku",
+      "subtitle": "com Pyrats e Kebraku",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -241,7 +226,7 @@
     },
     {
       "id": "260816-brasa-na-lage",
-      "title": "BRASA NA LAGE",
+      "title": "Brasa na Lage",
       "subtitle": "",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
@@ -256,8 +241,8 @@
     },
     {
       "id": "260821-tropiku-tropicaustica-kebraku",
-      "title": "TROPIKU",
-      "subtitle": "Tropicáustica e KEBRAKU",
+      "title": "Tropiku",
+      "subtitle": "com Tropicáustica e Kebraku",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -286,8 +271,8 @@
     },
     {
       "id": "260828-dr-love-the-matchmaker-party",
-      "title": "Dr. Love The Matchmaker Party",
-      "subtitle": "",
+      "title": "Dr Love",
+      "subtitle": "The Matchmaker Party",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -302,7 +287,7 @@
     {
       "id": "260829-bar-dancante",
       "title": "Bar Dançante",
-      "subtitle": "",
+      "subtitle": "Mike El Nite e João Não",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
