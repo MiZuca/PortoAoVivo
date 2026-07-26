@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-25T08:53:52Z",
-  "total": 16,
+  "updated_at": "2026-07-26T09:07:01Z",
+  "total": 14,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "glass-glass",
-      "title": "Glass Glass",
-      "subtitle": "Concertos na Piscina x Musa",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-07-25",
-      "time": "20:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/glass-glass/",
-      "intimate": true
-    },
-    {
-      "id": "260725-shuggah-lickurs",
-      "title": "Shuggah Lickurs",
-      "subtitle": "DJ set",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-25",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260725-shuggah-lickurs/",
-      "intimate": true
-    },
     {
       "id": "260728-porta-jazz-apresenta-pedro-molina-ricardo-moreira",
       "title": "Pedro Molina + Ricardo Moreira",
