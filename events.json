@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-28T09:30:02Z",
-  "total": 14,
+  "updated_at": "2026-07-29T09:31:45Z",
+  "total": 13,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260728-porta-jazz-apresenta-pedro-molina-ricardo-moreira",
-      "title": "Pedro Molina + Ricardo Moreira",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-28",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260728-porta-jazz-apresenta-pedro-molina-ricardo-moreira/",
-      "intimate": true
-    },
     {
       "id": "260730-albatroz-soda-caustica",
       "title": "Albatroz + Soda Cáustica",
