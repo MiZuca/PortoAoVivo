@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-30T09:24:59Z",
-  "total": 13,
+  "updated_at": "2026-07-31T09:36:07Z",
+  "total": 12,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260730-albatroz-soda-caustica",
-      "title": "Albatroz + Soda Cáustica",
-      "subtitle": "Concerto duplo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-07-30",
-      "time": "21:30",
-      "price": "5€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260730-albatroz-soda-caustica/",
-      "intimate": true
-    },
     {
       "id": "260731-xarau",
       "title": "Xarau",
