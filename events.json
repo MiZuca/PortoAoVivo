@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:04:29Z",
-  "total": 10,
+  "updated_at": "2026-08-03T10:31:26Z",
+  "total": 9,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260802-brasa-na-lage",
-      "title": "Brasa na Lage",
-      "subtitle": "",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-08-02",
-      "time": "17:00",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260802-brasa-na-lage/",
-      "intimate": true
-    },
     {
       "id": "260807-baile-do-tuim",
       "title": "Baile do Tuim",
