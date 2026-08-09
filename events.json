@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-08T07:39:39Z",
-  "total": 8,
+  "updated_at": "2026-08-09T07:43:30Z",
+  "total": 7,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260808-beyonce-fest",
-      "title": "Beyoncé Fest",
-      "subtitle": "Noite dedicada à Queen B",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-08-08",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260808-beyonce-fest/",
-      "intimate": true
-    },
     {
       "id": "260814-batidao-baile-funk",
       "title": "Batidão Baile Funk",
