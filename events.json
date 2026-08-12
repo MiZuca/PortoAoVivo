@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-11T08:01:32Z",
-  "total": 7,
+  "updated_at": "2026-08-12T08:08:08Z",
+  "total": 8,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -117,6 +117,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260829-bar-dancante/",
+      "intimate": true
+    },
+    {
+      "id": "25-anos-de-the-glow-pt-2",
+      "title": "25 Anos de The Glow Pt. 2, de The Microphones",
+      "subtitle": "Sessão de escuta + entrevista online em direto com Phil Elverum",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-16",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/25-anos-de-the-glow-pt-2/",
       "intimate": true
     },
     {
