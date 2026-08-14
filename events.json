@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T08:10:22Z",
+  "updated_at": "2026-08-14T08:06:13Z",
   "total": 8,
   "venues": {
     "maus-habitos": {
@@ -47,7 +47,7 @@
     {
       "id": "260816-brasa-na-lage",
       "title": "Brasa na Lage",
-      "subtitle": "",
+      "subtitle": "Festa",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
@@ -77,7 +77,7 @@
     {
       "id": "260822-ravebabe",
       "title": "RAVEBABE",
-      "subtitle": "",
+      "subtitle": "com DJ Princesa + Phaser + DJ Sentada",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
