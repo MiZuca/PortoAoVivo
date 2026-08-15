@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-14T08:06:13Z",
-  "total": 8,
+  "updated_at": "2026-08-15T07:20:39Z",
+  "total": 6,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260814-batidao-baile-funk",
-      "title": "Batidão Baile Funk",
-      "subtitle": "com Pyrats e Kebraku",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-08-14",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260814-batidao-baile-funk/",
-      "intimate": true
-    },
-    {
-      "id": "260816-brasa-na-lage",
-      "title": "Brasa na Lage",
-      "subtitle": "Festa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-08-16",
-      "time": "17:00",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260816-brasa-na-lage/",
-      "intimate": true
-    },
     {
       "id": "260821-tropiku-tropicaustica-kebraku",
       "title": "Tropiku",
