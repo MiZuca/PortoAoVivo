@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-18T07:28:15Z",
-  "total": 6,
+  "updated_at": "2026-08-20T07:31:29Z",
+  "total": 13,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -90,6 +90,36 @@
       "intimate": true
     },
     {
+      "id": "rca-gb",
+      "title": "GB",
+      "subtitle": "apresenta Herzsprung",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-10",
+      "time": "22:00",
+      "price": "15€ (pré-venda: 12€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-gb/",
+      "intimate": true
+    },
+    {
+      "id": "rca-agrupamento-musical-piscinas-municipais-trasgo",
+      "title": "Agrupamento Musical Piscinas Municipais + TRASGO",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-12",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-agrupamento-musical-piscinas-municipais-trasgo/",
+      "intimate": true
+    },
+    {
       "id": "25-anos-de-the-glow-pt-2",
       "title": "25 Anos de The Glow Pt. 2, de The Microphones",
       "subtitle": "Sessão de escuta + entrevista online em direto com Phil Elverum",
@@ -105,6 +135,51 @@
       "intimate": true
     },
     {
+      "id": "rca-amuleto-apotropaico-nuno-loureiro",
+      "title": "Amuleto Apotropaico + Nuno Loureiro",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-18",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-amuleto-apotropaico-nuno-loureiro/",
+      "intimate": true
+    },
+    {
+      "id": "rca-leonor-arnaut",
+      "title": "Leonor Arnaut",
+      "subtitle": "Cantora e compositora portuguesa sediada em Copenhaga",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-19",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-leonor-arnaut/",
+      "intimate": true
+    },
+    {
+      "id": "rca-maria-reis",
+      "title": "Maria Reis",
+      "subtitle": "apresenta Suspiro...",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-25",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-maria-reis/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-beto-guedes",
       "title": "Beto Guedes",
       "subtitle": "assinala 50 anos de carreira",
@@ -117,6 +192,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hard-club-beto-guedes/",
+      "intimate": true
+    },
+    {
+      "id": "rca-eme",
+      "title": "Éme",
+      "subtitle": "apresenta Colegas de Trabalho",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-26",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-eme/",
+      "intimate": true
+    },
+    {
+      "id": "rca-sophia-chablau-e-uma-enorme-perda-de-tempo-manu-julian",
+      "title": "Sophia Chablau e Uma Enorme Perda De Tempo + Manu Julian",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-27",
+      "time": "20:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-sophia-chablau-e-uma-enorme-perda-de-tempo-manu-julian/",
       "intimate": true
     }
   ]
