@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-21T07:33:51Z",
-  "total": 13,
+  "updated_at": "2026-08-22T07:22:10Z",
+  "total": 12,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260821-tropiku-tropicaustica-kebraku",
-      "title": "Tropiku",
-      "subtitle": "com Tropicáustica e Kebraku",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-08-21",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260821-tropiku-tropicaustica-kebraku/",
-      "intimate": true
-    },
     {
       "id": "260822-ravebabe",
       "title": "RAVEBABE",
