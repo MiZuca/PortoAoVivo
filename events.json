@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-22T07:22:10Z",
-  "total": 12,
+  "updated_at": "2026-08-23T07:24:15Z",
+  "total": 11,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260822-ravebabe",
-      "title": "RAVEBABE",
-      "subtitle": "com DJ Princesa + Phaser + DJ Sentada",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-08-22",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260822-ravebabe/",
-      "intimate": true
-    },
     {
       "id": "260828-dr-love-the-matchmaker-party",
       "title": "Dr Love",
