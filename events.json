@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-24T07:48:44Z",
-  "total": 11,
+  "updated_at": "2026-08-25T07:35:04Z",
+  "total": 13,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -192,6 +192,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-sophia-chablau-e-uma-enorme-perda-de-tempo-manu-julian/",
+      "intimate": true
+    },
+    {
+      "id": "25-anos-de-the-disintegration-loops",
+      "title": "25 Anos de The Disintegration Loops, de William Basinski",
+      "subtitle": "Sessão de escuta e entrevista online em direto com o músico",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-09-30",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/25-anos-de-the-disintegration-loops/",
+      "intimate": true
+    },
+    {
+      "id": "mercury-rev",
+      "title": "Mercury Rev",
+      "subtitle": "celebram os 25 anos de All Is Dream",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-10-02",
+      "time": "21:00",
+      "price": "30€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/mercury-rev/",
       "intimate": true
     }
   ]
