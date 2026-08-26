@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-25T07:35:04Z",
-  "total": 13,
+  "updated_at": "2026-08-26T07:36:22Z",
+  "total": 14,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,6 +29,21 @@
     }
   },
   "events": [
+    {
+      "id": "naobody-gives-a-jam",
+      "title": "NÃOBODY Gives a Jam",
+      "subtitle": "Jam session de hip-hop, R&amp;B e soul",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-08-26",
+      "time": "21:00",
+      "price": "5€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/naobody-gives-a-jam/",
+      "intimate": true
+    },
     {
       "id": "260828-dr-love-the-matchmaker-party",
       "title": "Dr Love",
