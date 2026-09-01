@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-31T14:32:15Z",
-  "total": 32,
+  "updated_at": "2026-09-01T12:12:03Z",
+  "total": 33,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -72,6 +72,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260904-shuggah-lickurs/",
+      "intimate": true
+    },
+    {
+      "id": "260905-vinyl-market",
+      "title": "Porto Vinyl Market",
+      "subtitle": "Feira de música",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-09-05",
+      "time": "14:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260905-vinyl-market/",
       "intimate": true
     },
     {
