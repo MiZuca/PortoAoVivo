@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-01T12:12:03Z",
-  "total": 33,
+  "updated_at": "2026-09-02T11:48:54Z",
+  "total": 32,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260901-porta-jazz-apresenta-gil-silva-goncalo-ribeiro",
-      "title": "Gil Silva + Gonçalo Ribeiro",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-01",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260901-porta-jazz-apresenta-gil-silva-goncalo-ribeiro/",
-      "intimate": true
-    },
     {
       "id": "260903-basic-partner-fr",
       "title": "Basic Partner",
