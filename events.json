@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-02T11:48:54Z",
-  "total": 32,
+  "updated_at": "2026-09-03T11:49:10Z",
+  "total": 33,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -87,6 +87,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260905-rapture/",
+      "intimate": true
+    },
+    {
+      "id": "mandragora-1788358628475",
+      "title": "Mandragora",
+      "subtitle": "Futureprog",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-09-05",
+      "time": "23:59",
+      "price": "18–24€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/mandragora-1788358628475/",
       "intimate": true
     },
     {
