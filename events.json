@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-03T11:49:10Z",
-  "total": 33,
+  "updated_at": "2026-09-04T11:50:33Z",
+  "total": 31,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260903-basic-partner-fr",
-      "title": "Basic Partner",
-      "subtitle": "Rock alternativo e post-punk",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-03",
-      "time": "21:30",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260903-basic-partner-fr/",
-      "intimate": true
-    },
     {
       "id": "260904-shuggah-lickurs",
       "title": "Shuggah Lickurs",
@@ -222,21 +207,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260915-porta-jazz-apresenta-anton-quintela-jose-vale/",
-      "intimate": true
-    },
-    {
-      "id": "260915-fado",
-      "title": "Fado com Miguel Bandeirinha",
-      "subtitle": "Serão mensal",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-16",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260915-fado/",
       "intimate": true
     },
     {
