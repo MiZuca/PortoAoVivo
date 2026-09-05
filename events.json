@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-04T11:50:33Z",
-  "total": 31,
+  "updated_at": "2026-09-05T11:00:29Z",
+  "total": 32,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260904-shuggah-lickurs",
-      "title": "Shuggah Lickurs",
-      "subtitle": "DJ set",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-04",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260904-shuggah-lickurs/",
-      "intimate": true
-    },
     {
       "id": "260905-vinyl-market",
       "title": "Porto Vinyl Market",
@@ -207,6 +192,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260915-porta-jazz-apresenta-anton-quintela-jose-vale/",
+      "intimate": true
+    },
+    {
+      "id": "260915-fado",
+      "title": "Fado com Miguel Bandeirinha",
+      "subtitle": "Serão mensal",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-09-16",
+      "time": "21:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260915-fado/",
       "intimate": true
     },
     {
@@ -492,6 +492,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/mercury-rev/",
+      "intimate": true
+    },
+    {
+      "id": "humberto-apresenta-mau-teatro",
+      "title": "Humberto",
+      "subtitle": "Primeira parte: Bar Aberto",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-17",
+      "time": "22:00",
+      "price": "12€ (pé-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/humberto-apresenta-mau-teatro/",
       "intimate": true
     }
   ]
