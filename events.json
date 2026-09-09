@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:50:57Z",
-  "total": 29,
+  "updated_at": "2026-09-09T12:01:28Z",
+  "total": 28,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260908-porta-jazz-apresenta-afonso-silva-joao-pedro-dias",
-      "title": "Afonso Silva + João Pedro Dias",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-08",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260908-porta-jazz-apresenta-afonso-silva-joao-pedro-dias/",
-      "intimate": true
-    },
     {
       "id": "260909-kabare-kamikaze",
       "title": "Kabaré Kamikaze",
