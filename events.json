@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-09T12:01:28Z",
-  "total": 28,
+  "updated_at": "2026-09-10T11:55:53Z",
+  "total": 27,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260909-kabare-kamikaze",
-      "title": "Kabaré Kamikaze",
-      "subtitle": "Cabaré da Réptil",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-09",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260909-kabare-kamikaze/",
-      "intimate": true
-    },
     {
       "id": "260910-stone-dead",
       "title": "Stone Dead",
@@ -107,7 +92,7 @@
     {
       "id": "260912-screwed",
       "title": "Screwed",
-      "subtitle": "SlimCutz",
+      "subtitle": "by SlimCutz",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
