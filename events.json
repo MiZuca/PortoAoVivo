@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-14T13:27:09Z",
-  "total": 24,
+  "updated_at": "2026-09-15T12:19:07Z",
+  "total": 23,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -177,21 +177,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260922-porta-jazz-apresenta-joao-fragoso-vera-morais/",
-      "intimate": true
-    },
-    {
-      "id": "260925-zangao",
-      "title": "Zangão",
-      "subtitle": "Eletrónica agressiva e irónica",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-25",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260925-zangao/",
       "intimate": true
     },
     {
