@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T12:19:07Z",
+  "updated_at": "2026-09-16T12:17:10Z",
   "total": 23,
   "venues": {
     "maus-habitos": {
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260915-porta-jazz-apresenta-anton-quintela-jose-vale",
-      "title": "Antón Quintela + José Vale",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-15",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260915-porta-jazz-apresenta-anton-quintela-jose-vale/",
-      "intimate": true
-    },
     {
       "id": "260915-fado",
       "title": "Fado com Miguel Bandeirinha",
@@ -177,6 +162,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/260922-porta-jazz-apresenta-joao-fragoso-vera-morais/",
+      "intimate": true
+    },
+    {
+      "id": "260925-zangao",
+      "title": "Zangão",
+      "subtitle": "Eletrónica agressiva e irónica",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-09-25",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/260925-zangao/",
       "intimate": true
     },
     {
