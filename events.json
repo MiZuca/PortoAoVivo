@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-16T12:17:10Z",
-  "total": 23,
+  "updated_at": "2026-09-17T12:17:30Z",
+  "total": 35,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260915-fado",
-      "title": "Fado com Miguel Bandeirinha",
-      "subtitle": "Serão mensal",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-16",
-      "time": "21:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260915-fado/",
-      "intimate": true
-    },
-    {
-      "id": "25-anos-de-the-glow-pt-2",
-      "title": "25 Anos de The Glow Pt. 2, de The Microphones",
-      "subtitle": "Sessão de escuta + entrevista online em direto com Phil Elverum",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-09-16",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/25-anos-de-the-glow-pt-2/",
-      "intimate": true
-    },
     {
       "id": "260917-youth-yard-desire-haze",
       "title": "Youth Yard + Desire Haze",
@@ -195,6 +165,21 @@
       "intimate": true
     },
     {
+      "id": "khaos-summer-closing",
+      "title": "Khaos: Summer Closing",
+      "subtitle": "Caldas + Becda + Nikov + Phantøm + Xøuja",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-09-25",
+      "time": "23:59",
+      "price": "12,5€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/khaos-summer-closing/",
+      "intimate": true
+    },
+    {
       "id": "260925-hollaback",
       "title": "Hollaback",
       "subtitle": "Peter Castro e Slimcutz",
@@ -222,6 +207,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hard-club-beto-guedes/",
+      "intimate": true
+    },
+    {
+      "id": "cities-aviv",
+      "title": "Cities Aviv",
+      "subtitle": "apresenta o disco Even Colder Spring",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-09-26",
+      "time": "21:00",
+      "price": "20€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/cities-aviv/",
       "intimate": true
     },
     {
@@ -315,6 +315,21 @@
       "intimate": true
     },
     {
+      "id": "rca-lisa-sereno-vitoria-vermelho",
+      "title": "Lisa Sereno + Vitória Vermelho",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-01",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-lisa-sereno-vitoria-vermelho/",
+      "intimate": true
+    },
+    {
       "id": "mercury-rev",
       "title": "Mercury Rev",
       "subtitle": "celebram os 25 anos de All Is Dream",
@@ -327,6 +342,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/mercury-rev/",
+      "intimate": true
+    },
+    {
+      "id": "rca-whitney-johnson-lia-kohl-e-macie-stewart",
+      "title": "Whitney Johnson, Lia Kohl e Macie Stewart",
+      "subtitle": "Trio de Chicago apresenta o álbum BODY SOUND",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-02",
+      "time": "22:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-whitney-johnson-lia-kohl-e-macie-stewart/",
+      "intimate": true
+    },
+    {
+      "id": "criatura-danca-bilrus",
+      "title": "Criatura-dança + Bilrus",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-10",
+      "time": "22:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/criatura-danca-bilrus/",
       "intimate": true
     },
     {
@@ -345,6 +390,21 @@
       "intimate": true
     },
     {
+      "id": "rca-humberto-bar-aberto",
+      "title": "Humberto + Bar Aberto",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-17",
+      "time": "22:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-humberto-bar-aberto/",
+      "intimate": true
+    },
+    {
       "id": "humberto-apresenta-mau-teatro",
       "title": "Humberto",
       "subtitle": "Primeira parte: Bar Aberto",
@@ -360,6 +420,81 @@
       "intimate": true
     },
     {
+      "id": "the-lemon-twigs",
+      "title": "The Lemon Twigs",
+      "subtitle": "",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-10-20",
+      "time": "21:00",
+      "price": "27€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/the-lemon-twigs/",
+      "intimate": true
+    },
+    {
+      "id": "rca-curbside-lambsear",
+      "title": "Curbside Lambsear",
+      "subtitle": "Projeto de Annabelle Mödlinger e Magdalena McLean",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-21",
+      "time": "22:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-curbside-lambsear/",
+      "intimate": true
+    },
+    {
+      "id": "rca-husbands-semivitae",
+      "title": "husbands. + Semivitae",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-23",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-husbands-semivitae/",
+      "intimate": true
+    },
+    {
+      "id": "rca-victoria-parque-imperio",
+      "title": "Victoria + Parque Império",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-24",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-victoria-parque-imperio/",
+      "intimate": true
+    },
+    {
+      "id": "rca-heith-andamp-tarawangsawelas",
+      "title": "Heith &amp; Tarawangsawelas",
+      "subtitle": "Projeto de Daniele Guerrini e Teguh Perman",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-25",
+      "time": "22:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-heith-andamp-tarawangsawelas/",
+      "intimate": true
+    },
+    {
       "id": "moonspell-nov26",
       "title": "Moonspell",
       "subtitle": "Especial Halloween",
@@ -372,6 +507,51 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/moonspell-nov26/",
+      "intimate": true
+    },
+    {
+      "id": "max-cooper",
+      "title": "Max Cooper",
+      "subtitle": "Microtechno e ambient",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-11-06",
+      "time": "21:00",
+      "price": "28€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/max-cooper/",
+      "intimate": true
+    },
+    {
+      "id": "miaw",
+      "title": "miaw",
+      "subtitle": "Do pop distorcido ao clube desconstruído, da cadência trip-hop à ressaca do hyperpop",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-11-13",
+      "time": "21:00",
+      "price": "18€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/miaw/",
+      "intimate": true
+    },
+    {
+      "id": "city-of-the-sun",
+      "title": "City of the Sun",
+      "subtitle": "Flamenco-blues instrumental",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-12-02",
+      "time": "21:00",
+      "price": "25€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/city-of-the-sun/",
       "intimate": true
     }
   ]
