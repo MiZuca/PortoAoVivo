@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T12:17:30Z",
+  "updated_at": "2026-09-18T11:57:45Z",
   "total": 35,
   "venues": {
     "maus-habitos": {
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260917-youth-yard-desire-haze",
-      "title": "Youth Yard + Desire Haze",
-      "subtitle": "Concerto duplo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-17",
-      "time": "21:30",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260917-youth-yard-desire-haze/",
-      "intimate": true
-    },
     {
       "id": "260918-exclusive-os-cabides-br",
       "title": "Exclusive Os Cabides",
@@ -372,6 +357,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/criatura-danca-bilrus/",
+      "intimate": true
+    },
+    {
+      "id": "maus-habitos-pmds",
+      "title": "PMDS",
+      "subtitle": "apresentam Redenção ",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-15",
+      "time": null,
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/maus-habitos-pmds/",
       "intimate": true
     },
     {
