@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:42:03Z",
-  "total": 33,
+  "updated_at": "2026-09-20T11:54:04Z",
+  "total": 31,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "rca-leonor-arnaut",
-      "title": "Leonor Arnaut",
-      "subtitle": "Cantora e compositora portuguesa sediada em Copenhaga",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-09-19",
-      "time": "22:00",
-      "price": "10€ (pré-venda: 8€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-leonor-arnaut/",
-      "intimate": true
-    },
-    {
-      "id": "260919-saturday-dubs",
-      "title": "Saturday Dubs",
-      "subtitle": "Reggae Playground &amp; Bass Invaders",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-19",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260919-saturday-dubs/",
-      "intimate": true
-    },
     {
       "id": "260922-porta-jazz-apresenta-joao-fragoso-vera-morais",
       "title": "João Fragoso + Vera Morais",
@@ -330,21 +300,6 @@
       "intimate": true
     },
     {
-      "id": "maus-habitos-pmds",
-      "title": "PMDS",
-      "subtitle": "apresentam Redenção ",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-15",
-      "time": null,
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/maus-habitos-pmds/",
-      "intimate": true
-    },
-    {
       "id": "hardclub-terrakota",
       "title": "Terrakota",
       "subtitle": "",
@@ -357,6 +312,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hardclub-terrakota/",
+      "intimate": true
+    },
+    {
+      "id": "maus-habitos-pmds",
+      "title": "PMDS",
+      "subtitle": "apresentam Redenção ",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-16",
+      "time": "21:30",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/maus-habitos-pmds/",
       "intimate": true
     },
     {
