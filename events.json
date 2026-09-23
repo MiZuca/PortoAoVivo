@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-22T12:11:06Z",
-  "total": 31,
+  "updated_at": "2026-09-23T12:23:18Z",
+  "total": 38,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260922-porta-jazz-apresenta-joao-fragoso-vera-morais",
-      "title": "João Fragoso + Vera Morais",
-      "subtitle": "Porta Jazz apresenta",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-22",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260922-porta-jazz-apresenta-joao-fragoso-vera-morais/",
-      "intimate": true
-    },
     {
       "id": "260925-zangao",
       "title": "Zangão",
@@ -225,6 +210,21 @@
       "intimate": true
     },
     {
+      "id": "261001-hubris-ch",
+      "title": "hubris.",
+      "subtitle": "Post-rock",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-01",
+      "time": "21:30",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261001-hubris-ch/",
+      "intimate": true
+    },
+    {
       "id": "rca-lisa-sereno-vitoria-vermelho",
       "title": "Lisa Sereno + Vitória Vermelho",
       "subtitle": "Concerto duplo",
@@ -285,6 +285,51 @@
       "intimate": true
     },
     {
+      "id": "261007-flippeur-fr",
+      "title": "Flippeur",
+      "subtitle": "Garage e synth-punk",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-07",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261007-flippeur-fr/",
+      "intimate": true
+    },
+    {
+      "id": "261008-salma-jo-br",
+      "title": "Salma Jô",
+      "subtitle": "Concerto a solo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-08",
+      "time": "21:30",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261008-salma-jo-br/",
+      "intimate": true
+    },
+    {
+      "id": "261009-xico-gaiato",
+      "title": "Xico Gaiato",
+      "subtitle": "Projeto musical e performativo de Francisco Barata",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-09",
+      "time": "21:00",
+      "price": "12€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261009-xico-gaiato/",
+      "intimate": true
+    },
+    {
       "id": "criatura-danca-bilrus",
       "title": "Criatura-dança + Bilrus",
       "subtitle": "Concerto duplo",
@@ -300,6 +345,21 @@
       "intimate": true
     },
     {
+      "id": "261016-pmds",
+      "title": "PMDS",
+      "subtitle": "Música electrónica, ambiental e experimental",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-16",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261016-pmds/",
+      "intimate": true
+    },
+    {
       "id": "hardclub-terrakota",
       "title": "Terrakota",
       "subtitle": "",
@@ -312,21 +372,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hardclub-terrakota/",
-      "intimate": true
-    },
-    {
-      "id": "maus-habitos-pmds",
-      "title": "PMDS",
-      "subtitle": "apresentam Redenção ",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-16",
-      "time": "21:30",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/maus-habitos-pmds/",
       "intimate": true
     },
     {
@@ -390,6 +435,36 @@
       "intimate": true
     },
     {
+      "id": "261022-tickles-fr",
+      "title": "Tickles",
+      "subtitle": "Noise punk ",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-22",
+      "time": "21:30",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261022-tickles-fr/",
+      "intimate": true
+    },
+    {
+      "id": "261023-belinda-rose",
+      "title": "Belinda Rose",
+      "subtitle": "apresentam o seu single de estreia",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-23",
+      "time": "21:00",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261023-belinda-rose/",
+      "intimate": true
+    },
+    {
       "id": "rca-husbands-semivitae",
       "title": "husbands. + Semivitae",
       "subtitle": "Concerto duplo",
@@ -432,6 +507,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-heith-andamp-tarawangsawelas/",
+      "intimate": true
+    },
+    {
+      "id": "261029-aspirina-heavy-ocean-awaiting-the-vulture",
+      "title": "Heavy Ocean + Awaiting The Vulture",
+      "subtitle": "Aspirina",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-29",
+      "time": "21:30",
+      "price": "8€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261029-aspirina-heavy-ocean-awaiting-the-vulture/",
+      "intimate": true
+    },
+    {
+      "id": "261030-humana-taranja",
+      "title": "Humana Taranja",
+      "subtitle": "Pop melódico e rock emotivo",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-30",
+      "time": "21:00",
+      "price": "6€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261030-humana-taranja/",
       "intimate": true
     },
     {
