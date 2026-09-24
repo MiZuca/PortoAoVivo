@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:23:18Z",
-  "total": 38,
+  "updated_at": "2026-09-24T12:23:23Z",
+  "total": 39,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -342,6 +342,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/criatura-danca-bilrus/",
+      "intimate": true
+    },
+    {
+      "id": "261015-jafuipedro",
+      "title": "JAFUIPEDRO",
+      "subtitle": "apresenta Coreto Pop",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-15",
+      "time": "21:30",
+      "price": "6€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/261015-jafuipedro/",
       "intimate": true
     },
     {
