@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-25T12:23:43Z",
-  "total": 39,
+  "updated_at": "2026-09-26T11:54:35Z",
+  "total": 35,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,66 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260925-zangao",
-      "title": "Zangão",
-      "subtitle": "Eletrónica agressiva e irónica",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-25",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260925-zangao/",
-      "intimate": true
-    },
-    {
-      "id": "rca-maria-reis",
-      "title": "Maria Reis",
-      "subtitle": "apresenta Suspiro...",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-09-25",
-      "time": "22:00",
-      "price": "10€ (pré-venda: 8€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-maria-reis/",
-      "intimate": true
-    },
-    {
-      "id": "khaos-summer-closing",
-      "title": "Khaos: Summer Closing",
-      "subtitle": "Caldas + Becda + Nikov + Phantøm + Xøuja",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-09-25",
-      "time": "23:59",
-      "price": "12,5€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/khaos-summer-closing/",
-      "intimate": true
-    },
-    {
-      "id": "260925-hollaback",
-      "title": "Hollaback",
-      "subtitle": "Peter Castro e Slimcutz",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-25",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260925-hollaback/",
-      "intimate": true
-    },
     {
       "id": "hard-club-beto-guedes",
       "title": "Beto Guedes",
