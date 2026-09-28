@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-27T12:33:49Z",
-  "total": 31,
+  "updated_at": "2026-09-28T14:39:45Z",
+  "total": 28,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "260723-aspirina-spitgod-vengeful-fate",
-      "title": "Spitgod + Vengeful Fate",
-      "subtitle": "Concerto duplo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-09-27",
-      "time": "17:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/260723-aspirina-spitgod-vengeful-fate/",
-      "intimate": true
-    },
-    {
-      "id": "rca-sophia-chablau-e-uma-enorme-perda-de-tempo-manu-julian",
-      "title": "Sophia Chablau e Uma Enorme Perda De Tempo + Manu Julian",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-09-27",
-      "time": "20:00",
-      "price": "12€ (pré-venda: 10€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-sophia-chablau-e-uma-enorme-perda-de-tempo-manu-julian/",
-      "intimate": true
-    },
     {
       "id": "260929-porta-jazz-apresenta-joao-cardita-rui-catarino",
       "title": "João Cardita + Rui Catarino",
@@ -117,21 +87,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-lisa-sereno-vitoria-vermelho/",
-      "intimate": true
-    },
-    {
-      "id": "mercury-rev",
-      "title": "Mercury Rev",
-      "subtitle": "celebram os 25 anos de All Is Dream",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-10-02",
-      "time": "21:00",
-      "price": "30€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/mercury-rev/",
       "intimate": true
     },
     {
