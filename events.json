@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-28T14:39:45Z",
-  "total": 28,
+  "updated_at": "2026-09-29T13:30:38Z",
+  "total": 29,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -87,6 +87,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-lisa-sereno-vitoria-vermelho/",
+      "intimate": true
+    },
+    {
+      "id": "mercury-rev",
+      "title": "Mercury Rev",
+      "subtitle": "celebram os 25 anos de All Is Dream",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-10-02",
+      "time": "21:00",
+      "price": "30€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/mercury-rev/",
       "intimate": true
     },
     {
