@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-30T13:07:13Z",
-  "total": 42,
+  "updated_at": "2026-10-01T14:04:27Z",
+  "total": 41,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "25-anos-de-the-disintegration-loops",
-      "title": "25 Anos de The Disintegration Loops, de William Basinski",
-      "subtitle": "Sessão de escuta e entrevista online em direto com o músico",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-09-30",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/25-anos-de-the-disintegration-loops/",
-      "intimate": true
-    },
     {
       "id": "261001-hubris-ch",
       "title": "hubris.",
