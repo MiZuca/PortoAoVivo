@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-01T14:04:27Z",
-  "total": 41,
+  "updated_at": "2026-10-02T13:18:01Z",
+  "total": 42,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261001-hubris-ch",
-      "title": "hubris.",
-      "subtitle": "Post-rock",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-01",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261001-hubris-ch/",
-      "intimate": true
-    },
-    {
-      "id": "rca-lisa-sereno-vitoria-vermelho",
-      "title": "Lisa Sereno + Vitória Vermelho",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-10-01",
-      "time": "22:00",
-      "price": "10€ (pré-venda: 8€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-lisa-sereno-vitoria-vermelho/",
-      "intimate": true
-    },
     {
       "id": "mercury-rev",
       "title": "Mercury Rev",
@@ -300,6 +270,21 @@
       "intimate": true
     },
     {
+      "id": "khaos-2a-edicao",
+      "title": "Khaos – 2.ª Edição",
+      "subtitle": "Hard techno",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-10-16",
+      "time": "23:59",
+      "price": "10–17,50€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/khaos-2a-edicao/",
+      "intimate": true
+    },
+    {
       "id": "261016-club-mosh",
       "title": "Club Mosh",
       "subtitle": "Rock, metal, rage e eletrónica",
@@ -342,6 +327,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/humberto-apresenta-mau-teatro/",
+      "intimate": true
+    },
+    {
+      "id": "hard-bounce-1a-edicao",
+      "title": "Hard Bounce – 1.ª Edição",
+      "subtitle": "Doctor Mücke + Jesoorifa + Siqueira + Mona",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-10-17",
+      "time": "23:59",
+      "price": "10–17,50€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-bounce-1a-edicao/",
       "intimate": true
     },
     {
@@ -567,6 +567,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/261030-dr-love-the-matchmaker-party/",
+      "intimate": true
+    },
+    {
+      "id": "scary-groove-quest",
+      "title": "Scary Groove Quest",
+      "subtitle": "Ritmos hipnóticos, energia crua e techno",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-10-31",
+      "time": "23:59",
+      "price": "8–40€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/scary-groove-quest/",
       "intimate": true
     },
     {
