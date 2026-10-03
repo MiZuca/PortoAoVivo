@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-02T13:18:01Z",
-  "total": 42,
+  "updated_at": "2026-10-03T12:07:45Z",
+  "total": 39,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,51 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "mercury-rev",
-      "title": "Mercury Rev",
-      "subtitle": "celebram os 25 anos de All Is Dream",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-10-02",
-      "time": "21:00",
-      "price": "30€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/mercury-rev/",
-      "intimate": true
-    },
-    {
-      "id": "rca-whitney-johnson-lia-kohl-e-macie-stewart",
-      "title": "Whitney Johnson, Lia Kohl e Macie Stewart",
-      "subtitle": "Trio de Chicago apresenta o álbum BODY SOUND",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-10-02",
-      "time": "22:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-whitney-johnson-lia-kohl-e-macie-stewart/",
-      "intimate": true
-    },
-    {
-      "id": "261002-baile-do-tuim",
-      "title": "Baile do Tuim",
-      "subtitle": "Inspirado nos bailes da noite de São Paulo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-02",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261002-baile-do-tuim/",
-      "intimate": true
-    },
     {
       "id": "ira-1789687116659",
       "title": "IRA!",
