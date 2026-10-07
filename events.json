@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-06T13:44:17Z",
-  "total": 37,
+  "updated_at": "2026-10-07T14:02:07Z",
+  "total": 39,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261006-porta-jazz-apresenta-nuno-trocado-deni-omeragic",
-      "title": "Porta Jazz apresenta: Nuno Trocado + Deni Omeragić",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-06",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261006-porta-jazz-apresenta-nuno-trocado-deni-omeragic/",
-      "intimate": true
-    },
     {
       "id": "261007-flippeur-fr",
       "title": "Flippeur",
@@ -542,7 +527,7 @@
     {
       "id": "max-cooper",
       "title": "Max Cooper",
-      "subtitle": "Microtechno e ambient",
+      "subtitle": "apresenta o álbum Feeling is Structure",
       "venue_id": "hard-club",
       "venue": "Hard Club",
       "venue_capacity": 200,
@@ -567,6 +552,51 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/miaw/",
+      "intimate": true
+    },
+    {
+      "id": "hard-club-the-twilight-sad",
+      "title": "The Twilight Sad",
+      "subtitle": "Guitarras densas, sintetizadores hipnóticos e uma carga emocional rara",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-11-14",
+      "time": "21:00",
+      "price": "30€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-club-the-twilight-sad/",
+      "intimate": true
+    },
+    {
+      "id": "hard-club-lebanon-hanover",
+      "title": "Lebanon Hanover",
+      "subtitle": "Digressão inspirada no novo álbum Asylum Lullabies",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-11-21",
+      "time": "21:00",
+      "price": "27€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-club-lebanon-hanover/",
+      "intimate": true
+    },
+    {
+      "id": "hard-club-ganso",
+      "title": "GANSO",
+      "subtitle": "celebram 10 anos de carreira",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-11-27",
+      "time": "21:30",
+      "price": "20€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hard-club-ganso/",
       "intimate": true
     },
     {
