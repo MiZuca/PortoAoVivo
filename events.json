@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T14:02:07Z",
+  "updated_at": "2026-10-08T14:08:51Z",
   "total": 39,
   "venues": {
     "maus-habitos": {
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261007-flippeur-fr",
-      "title": "Flippeur",
-      "subtitle": "Garage e synth-punk",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-07",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261007-flippeur-fr/",
-      "intimate": true
-    },
     {
       "id": "261008-salma-jo-br",
       "title": "Salma Jô",
@@ -357,6 +342,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-husbands-semivitae/",
+      "intimate": true
+    },
+    {
+      "id": "micar-tempos-brutos-dancas-furiosas",
+      "title": "Tempos Brutos, Danças Furiosas",
+      "subtitle": "Afterparty MICAR",
+      "venue_id": "maus-habitos",
+      "venue": "Maus Hábitos",
+      "venue_capacity": 150,
+      "date": "2026-10-23",
+      "time": "23:59",
+      "price": "6€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/micar-tempos-brutos-dancas-furiosas/",
       "intimate": true
     },
     {
