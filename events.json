@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-08T14:08:51Z",
-  "total": 39,
+  "updated_at": "2026-10-09T13:57:02Z",
+  "total": 38,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261008-salma-jo-br",
-      "title": "Salma Jô",
-      "subtitle": "Concerto a solo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-08",
-      "time": "21:30",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261008-salma-jo-br/",
-      "intimate": true
-    },
     {
       "id": "261009-xico-gaiato",
       "title": "Xico Gaiato",
