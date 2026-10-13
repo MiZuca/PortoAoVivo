@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-12T16:14:18Z",
-  "total": 35,
+  "updated_at": "2026-10-13T14:39:33Z",
+  "total": 37,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -375,6 +375,21 @@
       "intimate": true
     },
     {
+      "id": "montes-alga",
+      "title": "Montes + Alga",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-28",
+      "time": "22:00",
+      "price": "9€ (pré-venda: 7€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/montes-alga/",
+      "intimate": true
+    },
+    {
       "id": "261029-aspirina-heavy-ocean-awaiting-the-vulture",
       "title": "Heavy Ocean + Awaiting The Vulture",
       "subtitle": "Aspirina",
@@ -417,6 +432,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/261030-dr-love-the-matchmaker-party/",
+      "intimate": true
+    },
+    {
+      "id": "rca-hetta-mangualde-tape",
+      "title": "Hetta + Mangualde + TAPE",
+      "subtitle": "Concerto triplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-31",
+      "time": "22:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-hetta-mangualde-tape/",
       "intimate": true
     },
     {
