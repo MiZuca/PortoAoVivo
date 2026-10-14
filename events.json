@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-13T14:39:33Z",
-  "total": 37,
+  "updated_at": "2026-10-14T12:32:09Z",
+  "total": 36,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261006-porta-jazz-apresenta-goncalo-cravinho-joao-ferreira",
-      "title": "Porta Jazz apresenta: Gonçalo Cravinho + João Ferreira",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-13",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261006-porta-jazz-apresenta-goncalo-cravinho-joao-ferreira/",
-      "intimate": true
-    },
     {
       "id": "261015-jafuipedro",
       "title": "JAFUIPEDRO",
