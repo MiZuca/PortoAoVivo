@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:32:09Z",
+  "updated_at": "2026-10-15T12:13:49Z",
   "total": 36,
   "venues": {
     "maus-habitos": {
@@ -31,7 +31,7 @@
   "events": [
     {
       "id": "261015-jafuipedro",
-      "title": "JAFUIPEDRO",
+      "title": "JAFUIPEDRO — CANCELADO",
       "subtitle": "apresenta Coreto Pop",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
@@ -62,7 +62,7 @@
     {
       "id": "hardclub-terrakota",
       "title": "Terrakota",
-      "subtitle": "",
+      "subtitle": "Reggae, ska, rocksteady, world music",
       "venue_id": "hard-club",
       "venue": "Hard Club",
       "venue_capacity": 200,
