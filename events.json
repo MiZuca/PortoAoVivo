@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-16T11:59:09Z",
-  "total": 34,
+  "updated_at": "2026-10-17T11:14:50Z",
+  "total": 29,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,81 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261016-pmds",
-      "title": "PMDS",
-      "subtitle": "Música electrónica, ambiental e experimental",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-16",
-      "time": "21:00",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261016-pmds/",
-      "intimate": true
-    },
-    {
-      "id": "hardclub-terrakota",
-      "title": "Terrakota",
-      "subtitle": "Reggae, ska, rocksteady, world music",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-10-16",
-      "time": "21:30",
-      "price": "20–25€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/hardclub-terrakota/",
-      "intimate": true
-    },
-    {
-      "id": "rca-alpha-maid-superbronca",
-      "title": "Alpha Maid + superbronca",
-      "subtitle": "Concerto duplo ",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-10-16",
-      "time": "22:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-alpha-maid-superbronca/",
-      "intimate": true
-    },
-    {
-      "id": "khaos-2a-edicao",
-      "title": "Khaos",
-      "subtitle": "Hard techno",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-10-16",
-      "time": "23:59",
-      "price": "10–17,50€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/khaos-2a-edicao/",
-      "intimate": true
-    },
-    {
-      "id": "261016-club-mosh",
-      "title": "Club Mosh",
-      "subtitle": "Rock, metal, rage e eletrónica",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-16",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261016-club-mosh/",
-      "intimate": true
-    },
     {
       "id": "rca-humberto-bar-aberto",
       "title": "Humberto + Bar Aberto",
