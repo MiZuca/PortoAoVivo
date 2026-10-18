@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-17T11:14:50Z",
-  "total": 29,
+  "updated_at": "2026-10-18T11:50:49Z",
+  "total": 27,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "rca-humberto-bar-aberto",
-      "title": "Humberto + Bar Aberto",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-10-17",
-      "time": "22:00",
-      "price": "12€ (pré-venda: 10€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-humberto-bar-aberto/",
-      "intimate": true
-    },
-    {
-      "id": "hard-bounce-1a-edicao",
-      "title": "Hard Bounce",
-      "subtitle": "Doctor Mücke + Jesoorifa + Siqueira + Mona",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-10-17",
-      "time": "23:59",
-      "price": "10–17,50€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/hard-bounce-1a-edicao/",
-      "intimate": true
-    },
     {
       "id": "the-lemon-twigs",
       "title": "The Lemon Twigs",
