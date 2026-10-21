@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-20T12:21:44Z",
-  "total": 27,
+  "updated_at": "2026-10-21T12:31:06Z",
+  "total": 32,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -30,36 +30,6 @@
   },
   "events": [
     {
-      "id": "the-lemon-twigs",
-      "title": "The Lemon Twigs",
-      "subtitle": "",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-10-20",
-      "time": "21:00",
-      "price": "27€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/the-lemon-twigs/",
-      "intimate": true
-    },
-    {
-      "id": "261020-porta-jazz-apresenta-sergio-tavares-ap",
-      "title": "Porta Jazz apresenta: Sérgio Tavares + AP",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-20",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261020-porta-jazz-apresenta-sergio-tavares-ap/",
-      "intimate": true
-    },
-    {
       "id": "261021-fado",
       "title": "Fado com Miguel Bandeirinha",
       "subtitle": "Serão mensal",
@@ -77,7 +47,7 @@
     {
       "id": "rca-curbside-lambsear",
       "title": "Curbside Lambsear",
-      "subtitle": "Projeto de Annabelle Mödlinger e Magdalena McLean",
+      "subtitle": "Abertura: sús",
       "venue_id": "rca",
       "venue": "RCA — Radioclube Agramonte",
       "venue_capacity": 200,
@@ -147,21 +117,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/micar-tempos-brutos-dancas-furiosas/",
-      "intimate": true
-    },
-    {
-      "id": "261023-micar-festa-de-abertura",
-      "title": "MICAR — Festa de Abertura",
-      "subtitle": "Mostra Internacional de Cinema Anti-Racista",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-23",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261023-micar-festa-de-abertura/",
       "intimate": true
     },
     {
@@ -345,6 +300,21 @@
       "intimate": true
     },
     {
+      "id": "rca-penelope-isles-silentide",
+      "title": "Penelope Isles + Silentide",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-05",
+      "time": "22:00",
+      "price": "15€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-penelope-isles-silentide/",
+      "intimate": true
+    },
+    {
       "id": "max-cooper",
       "title": "Max Cooper",
       "subtitle": "apresenta o álbum Feeling is Structure",
@@ -357,6 +327,51 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/max-cooper/",
+      "intimate": true
+    },
+    {
+      "id": "rca-fears-laura-olim",
+      "title": "Fears + Laura Olim",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-06",
+      "time": "22:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-fears-laura-olim/",
+      "intimate": true
+    },
+    {
+      "id": "rca-liquen-mafalda",
+      "title": "Líquen + Mafalda",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-07",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-liquen-mafalda/",
+      "intimate": true
+    },
+    {
+      "id": "rca-keiyaa",
+      "title": "Keiyaa",
+      "subtitle": "Concerto",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-12",
+      "time": "22:00",
+      "price": "12€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-keiyaa/",
       "intimate": true
     },
     {
@@ -375,6 +390,21 @@
       "intimate": true
     },
     {
+      "id": "rca-superfan",
+      "title": "Superfan",
+      "subtitle": "Concerto",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-13",
+      "time": "22:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-superfan/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-the-twilight-sad",
       "title": "The Twilight Sad",
       "subtitle": "Guitarras densas, sintetizadores hipnóticos e uma carga emocional rara",
@@ -390,6 +420,21 @@
       "intimate": true
     },
     {
+      "id": "rca-redoma-chek1",
+      "title": "Redoma + Chek1",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-20",
+      "time": "22:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-redoma-chek1/",
+      "intimate": true
+    },
+    {
       "id": "hard-club-lebanon-hanover",
       "title": "Lebanon Hanover",
       "subtitle": "Digressão inspirada no novo álbum Asylum Lullabies",
@@ -402,6 +447,36 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hard-club-lebanon-hanover/",
+      "intimate": true
+    },
+    {
+      "id": "rca-jasmin",
+      "title": "Jasmin",
+      "subtitle": "Concerto",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-21",
+      "time": "22:00",
+      "price": "12€ (pré-venda: 10€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-jasmin/",
+      "intimate": true
+    },
+    {
+      "id": "rca-maria-bc",
+      "title": "Maria BC",
+      "subtitle": "Concerto",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-26",
+      "time": "22:00",
+      "price": "10€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-maria-bc/",
       "intimate": true
     },
     {
