@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T12:41:13Z",
+  "updated_at": "2026-10-23T12:14:46Z",
   "total": 29,
   "venues": {
     "maus-habitos": {
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261022-tickles-fr",
-      "title": "Tickles",
-      "subtitle": "Noise punk ",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-22",
-      "time": "21:30",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261022-tickles-fr/",
-      "intimate": true
-    },
     {
       "id": "261023-belinda-rose",
       "title": "Belinda Rose",
@@ -87,6 +72,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/micar-tempos-brutos-dancas-furiosas/",
+      "intimate": true
+    },
+    {
+      "id": "rca-victoria-parque-imperio",
+      "title": "Victoria + Parque Império",
+      "subtitle": "Concerto duplo",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-10-24",
+      "time": "22:00",
+      "price": "10€ (pré-venda: 8€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-victoria-parque-imperio/",
       "intimate": true
     },
     {
