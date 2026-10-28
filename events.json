@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T12:49:50Z",
-  "total": 44,
+  "updated_at": "2026-10-28T13:38:36Z",
+  "total": 43,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261027-porta-jazz-apresenta-josue-miguel-serrao-pereira",
-      "title": "Porta Jazz apresenta: Josué + Miguel Serrão Pereira",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-27",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261027-porta-jazz-apresenta-josue-miguel-serrao-pereira/",
-      "intimate": true
-    },
     {
       "id": "montes-alga",
       "title": "Montes + Alga",
