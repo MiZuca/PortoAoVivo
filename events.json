@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28T13:38:36Z",
-  "total": 43,
+  "updated_at": "2026-10-29T13:48:27Z",
+  "total": 44,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -30,23 +30,8 @@
   },
   "events": [
     {
-      "id": "montes-alga",
-      "title": "Montes + Alga",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-10-28",
-      "time": "22:00",
-      "price": "9€ (pré-venda: 7€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/montes-alga/",
-      "intimate": true
-    },
-    {
       "id": "261029-aspirina-heavy-ocean-awaiting-the-vulture",
-      "title": "Heavy Ocean + Awaiting The Vulture",
+      "title": "Heavy Ocean + Awaiting The Vultures",
       "subtitle": "Aspirina",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
@@ -345,6 +330,21 @@
       "intimate": true
     },
     {
+      "id": "jose-cid-andamp-septeto",
+      "title": "José Cid & Septeto",
+      "subtitle": "Concerto do cantor, compositor e multi-instrumentista português",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-11-13",
+      "time": "21:00",
+      "price": "15–20€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/jose-cid-andamp-septeto/",
+      "intimate": true
+    },
+    {
       "id": "miaw",
       "title": "miaw",
       "subtitle": "Do pop distorcido ao clube desconstruído, da cadência trip-hop à ressaca do hyperpop",
@@ -552,6 +552,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/261121-shuggah-lickurs/",
+      "intimate": true
+    },
+    {
+      "id": "wallow-gospel-de-natal",
+      "title": "Wallow — Gospel de Natal",
+      "subtitle": "Concerto que cruza música e espírito natalício",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-11-22",
+      "time": "18:00",
+      "price": "6–12€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/wallow-gospel-de-natal/",
       "intimate": true
     },
     {
