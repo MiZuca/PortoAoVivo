@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-29T13:48:27Z",
-  "total": 44,
+  "updated_at": "2026-10-30T13:41:40Z",
+  "total": 43,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261029-aspirina-heavy-ocean-awaiting-the-vulture",
-      "title": "Heavy Ocean + Awaiting The Vultures",
-      "subtitle": "Aspirina",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-29",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261029-aspirina-heavy-ocean-awaiting-the-vulture/",
-      "intimate": true
-    },
     {
       "id": "261030-humana-taranja",
       "title": "Humana Taranja",
@@ -347,7 +332,7 @@
     {
       "id": "miaw",
       "title": "miaw",
-      "subtitle": "Do pop distorcido ao clube desconstruído, da cadência trip-hop à ressaca do hyperpop",
+      "subtitle": "Pop, club, trip-hop e hyperpop",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
