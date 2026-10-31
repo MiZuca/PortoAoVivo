@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-30T13:41:40Z",
-  "total": 43,
+  "updated_at": "2026-10-31T13:09:56Z",
+  "total": 41,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261030-humana-taranja",
-      "title": "Humana Taranja",
-      "subtitle": "Pop melódico e rock emotivo",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-30",
-      "time": "21:00",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261030-humana-taranja/",
-      "intimate": true
-    },
-    {
-      "id": "261030-dr-love-the-matchmaker-party",
-      "title": "Dr Love",
-      "subtitle": "The Matchmaker Party",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-10-30",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261030-dr-love-the-matchmaker-party/",
-      "intimate": true
-    },
     {
       "id": "rca-hetta-mangualde-tape",
       "title": "Hetta + Mangualde + TAPE",
