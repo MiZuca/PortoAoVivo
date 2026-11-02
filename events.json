@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-01T13:53:37Z",
-  "total": 38,
+  "updated_at": "2026-11-02T16:39:51Z",
+  "total": 37,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "moonspell-nov26",
-      "title": "Moonspell",
-      "subtitle": "Especial Halloween",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-11-01",
-      "time": "21:00",
-      "price": "32€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/moonspell-nov26/",
-      "intimate": true
-    },
     {
       "id": "261103-porta-jazz-apresenta-xavier-nunes-ze-stark",
       "title": "Porta Jazz apresenta: Xavier Nunes + Zé Stark",
