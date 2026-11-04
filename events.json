@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-03T14:43:59Z",
-  "total": 37,
+  "updated_at": "2026-11-04T14:55:55Z",
+  "total": 36,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261103-porta-jazz-apresenta-xavier-nunes-ze-stark",
-      "title": "Porta Jazz apresenta: Xavier Nunes + Zé Stark",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-03",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261103-porta-jazz-apresenta-xavier-nunes-ze-stark/",
-      "intimate": true
-    },
     {
       "id": "261105-mike-vhiles",
       "title": "Mike Vhiles",
