@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T14:55:55Z",
+  "updated_at": "2026-11-05T15:00:27Z",
   "total": 36,
   "venues": {
     "maus-habitos": {
@@ -465,8 +465,8 @@
       "intimate": true
     },
     {
-      "id": "261126-aspirina-besta-equaleft",
-      "title": "Besta + Equaleft",
+      "id": "261126-aspirina-besta-nihility",
+      "title": "Besta + Nihility",
       "subtitle": "Aspirina",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
@@ -476,7 +476,7 @@
       "price": "8€",
       "ticket_url": "",
       "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261126-aspirina-besta-equaleft/",
+      "url": "https://www.agenda-porto.pt/en/evento/261126-aspirina-besta-nihility/",
       "intimate": true
     },
     {
