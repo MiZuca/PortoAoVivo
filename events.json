@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-05T15:00:27Z",
-  "total": 36,
+  "updated_at": "2026-11-06T14:40:51Z",
+  "total": 34,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261105-mike-vhiles",
-      "title": "Mike Vhiles",
-      "subtitle": "Erupções sónicas repletas de fuzz e distorção gutural",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-05",
-      "time": "21:30",
-      "price": "7€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261105-mike-vhiles/",
-      "intimate": true
-    },
-    {
-      "id": "rca-penelope-isles-silentide",
-      "title": "Penelope Isles + Silentide",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-05",
-      "time": "22:00",
-      "price": "15€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-penelope-isles-silentide/",
-      "intimate": true
-    },
     {
       "id": "max-cooper",
       "title": "Max Cooper",
