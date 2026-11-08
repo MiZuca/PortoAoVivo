@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T13:38:34Z",
-  "total": 34,
+  "updated_at": "2026-11-08T13:57:13Z",
+  "total": 31,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,51 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261107-vinyl-market",
-      "title": "Porto Vinyl Market",
-      "subtitle": "Feira de música",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-07",
-      "time": "14:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261107-vinyl-market/",
-      "intimate": true
-    },
-    {
-      "id": "rca-liquen-mafalda",
-      "title": "Líquen + Mafalda",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-07",
-      "time": "22:00",
-      "price": "10€ (pré-venda: 8€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-liquen-mafalda/",
-      "intimate": true
-    },
-    {
-      "id": "261107-brasa",
-      "title": "Brasa",
-      "subtitle": "Baile rave queer",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-07",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261107-brasa/",
-      "intimate": true
-    },
     {
       "id": "261110-porta-jazz-apresenta-mane-fernandes-felix-henklehausen",
       "title": "Porta Jazz apresenta: Mané Fernandes + Felix Henklehausen",
