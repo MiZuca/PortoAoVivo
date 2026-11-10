@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-09T16:57:16Z",
-  "total": 31,
+  "updated_at": "2026-11-10T15:16:59Z",
+  "total": 32,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -327,6 +327,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/261124-porta-jazz-apresenta-teresa-costa-marco-coelho/",
+      "intimate": true
+    },
+    {
+      "id": "swans-live-berlin",
+      "title": "Swans Live Berlin, de Marco Porsia e Peter Harton",
+      "subtitle": "Exibição de estreia do filme-concerto",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-11-25",
+      "time": "20:00",
+      "price": "4€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/swans-live-berlin/",
       "intimate": true
     },
     {
