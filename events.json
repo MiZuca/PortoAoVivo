@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-10T15:16:59Z",
-  "total": 32,
+  "updated_at": "2026-11-12T15:39:45Z",
+  "total": 33,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261110-porta-jazz-apresenta-mane-fernandes-felix-henklehausen",
-      "title": "Porta Jazz apresenta: Mané Fernandes + Felix Henklehausen",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-10",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261110-porta-jazz-apresenta-mane-fernandes-felix-henklehausen/",
-      "intimate": true
-    },
     {
       "id": "261112-dirty-sound-magnet",
       "title": "Dirty Sound Magnet",
@@ -465,6 +450,21 @@
       "intimate": true
     },
     {
+      "id": "hc-nuki",
+      "title": "Nuki",
+      "subtitle": "Metal pós-apocalíptico, nu-alternativo, emo, grunge e gaze",
+      "venue_id": "hard-club",
+      "venue": "Hard Club",
+      "venue_capacity": 200,
+      "date": "2026-12-06",
+      "time": "20:00",
+      "price": "20–30€",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/hc-nuki/",
+      "intimate": true
+    },
+    {
       "id": "rca-gwenifer-raymond",
       "title": "Gwenifer Raymond",
       "subtitle": "Concerto",
@@ -507,6 +507,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-cat-soup/",
+      "intimate": true
+    },
+    {
+      "id": "rca-hesse-kassel",
+      "title": "Hesse Kassel",
+      "subtitle": "apresentam Morir Saltando",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2027-02-19",
+      "time": "21:30",
+      "price": "15€ pré-venda / 17€ à porta",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-hesse-kassel/",
       "intimate": true
     }
   ]
