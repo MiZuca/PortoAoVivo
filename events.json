@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-12T15:39:45Z",
-  "total": 33,
+  "updated_at": "2026-11-13T14:58:47Z",
+  "total": 31,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261112-dirty-sound-magnet",
-      "title": "Dirty Sound Magnet",
-      "subtitle": "Trio suíço de rock moderno",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-12",
-      "time": "21:30",
-      "price": "12€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261112-dirty-sound-magnet/",
-      "intimate": true
-    },
-    {
-      "id": "rca-keiyaa",
-      "title": "Keiyaa",
-      "subtitle": "Concerto",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-12",
-      "time": "22:00",
-      "price": "12€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-keiyaa/",
-      "intimate": true
-    },
     {
       "id": "jose-cid-andamp-septeto",
       "title": "José Cid & Septeto",
