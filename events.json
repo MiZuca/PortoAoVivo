@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T14:58:47Z",
-  "total": 31,
+  "updated_at": "2026-11-14T13:51:14Z",
+  "total": 27,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,66 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "jose-cid-andamp-septeto",
-      "title": "José Cid & Septeto",
-      "subtitle": "Concerto do cantor, compositor e multi-instrumentista português",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-11-13",
-      "time": "21:00",
-      "price": "15–20€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/jose-cid-andamp-septeto/",
-      "intimate": true
-    },
-    {
-      "id": "miaw",
-      "title": "miaw",
-      "subtitle": "Pop, club, trip-hop e hyperpop",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-13",
-      "time": "21:00",
-      "price": "18€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/miaw/",
-      "intimate": true
-    },
-    {
-      "id": "rca-superfan",
-      "title": "Superfan",
-      "subtitle": "Concerto",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-13",
-      "time": "22:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-superfan/",
-      "intimate": true
-    },
-    {
-      "id": "261113-baddies",
-      "title": "Baddies",
-      "subtitle": "Festa da Pyrats ",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-13",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261113-baddies/",
-      "intimate": true
-    },
     {
       "id": "261114-1o-ensaio-de-carnaval-batucada-radical-samba-do-porto-andamp-convidados",
       "title": "Batucada Radical, Samba do Porto &amp; Convidados",
