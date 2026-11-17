@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-16T16:34:29Z",
-  "total": 23,
+  "updated_at": "2026-11-17T16:32:22Z",
+  "total": 24,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -372,6 +372,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/rca-cat-soup/",
+      "intimate": true
+    },
+    {
+      "id": "rca-hesse-kassel",
+      "title": "Hesse Kassel",
+      "subtitle": "apresentam Morir Saltando",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2027-02-19",
+      "time": "21:30",
+      "price": "15€ pré-venda / 17€ à porta",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-hesse-kassel/",
       "intimate": true
     }
   ]
