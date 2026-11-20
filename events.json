@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19T16:08:29Z",
-  "total": 22,
+  "updated_at": "2026-11-20T15:49:48Z",
+  "total": 21,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261119-mansionand39s-cellar",
-      "title": "Mansion's Cellar",
-      "subtitle": "Rock psicadélico",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-19",
-      "time": "21:30",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261119-mansionand39s-cellar/",
-      "intimate": true
-    },
     {
       "id": "rca-redoma-chek1",
       "title": "Redoma + Chek1",
