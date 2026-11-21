@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20T15:49:48Z",
-  "total": 21,
+  "updated_at": "2026-11-21T14:59:03Z",
+  "total": 20,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "rca-redoma-chek1",
-      "title": "Redoma + Chek1",
-      "subtitle": "Concerto duplo",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-20",
-      "time": "22:00",
-      "price": "12€ (pré-venda: 10€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-redoma-chek1/",
-      "intimate": true
-    },
     {
       "id": "261120-tropiku-tropicaustica-kebraku",
       "title": "Tropiku",
