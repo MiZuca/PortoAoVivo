@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T14:59:03Z",
-  "total": 20,
+  "updated_at": "2026-11-22T14:57:28Z",
+  "total": 15,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,66 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261120-tropiku-tropicaustica-kebraku",
-      "title": "Tropiku",
-      "subtitle": "Tropicáustica + Kebraku",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-20",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261120-tropiku-tropicaustica-kebraku/",
-      "intimate": true
-    },
-    {
-      "id": "hard-club-lebanon-hanover",
-      "title": "Lebanon Hanover",
-      "subtitle": "Digressão inspirada no novo álbum Asylum Lullabies",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-11-21",
-      "time": "21:00",
-      "price": "27€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/hard-club-lebanon-hanover/",
-      "intimate": true
-    },
-    {
-      "id": "rca-jasmin",
-      "title": "Jasmim",
-      "subtitle": "Concerto",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-21",
-      "time": "22:00",
-      "price": "12€ (pré-venda: 10€)",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-jasmin/",
-      "intimate": true
-    },
-    {
-      "id": "261121-shuggah-lickurs",
-      "title": "Shuggah Lickurs",
-      "subtitle": "DJ set",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-21",
-      "time": "23:59",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261121-shuggah-lickurs/",
-      "intimate": true
-    },
     {
       "id": "wallow-gospel-de-natal",
       "title": "Wallow — Gospel de Natal",
@@ -207,21 +147,6 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/261127-hollaback/",
-      "intimate": true
-    },
-    {
-      "id": "261128-maquina-culona",
-      "title": "Máquina Culona",
-      "subtitle": "Música urbana e avant-pop espanhola",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-28",
-      "time": "23:59",
-      "price": "6€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261128-maquina-culona/",
       "intimate": true
     },
     {
