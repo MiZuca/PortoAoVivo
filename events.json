@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T14:57:28Z",
+  "updated_at": "2026-11-23T18:49:58Z",
   "total": 15,
   "venues": {
     "maus-habitos": {
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "wallow-gospel-de-natal",
-      "title": "Wallow — Gospel de Natal",
-      "subtitle": "Concerto que cruza música e espírito natalício",
-      "venue_id": "hard-club",
-      "venue": "Hard Club",
-      "venue_capacity": 200,
-      "date": "2026-11-22",
-      "time": "18:00",
-      "price": "6–12€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/wallow-gospel-de-natal/",
-      "intimate": true
-    },
     {
       "id": "261124-porta-jazz-apresenta-teresa-costa-marco-coelho",
       "title": "Porta Jazz apresenta: Teresa Costa + Marco Coelho",
@@ -135,18 +120,18 @@
       "intimate": true
     },
     {
-      "id": "261127-hollaback",
-      "title": "Hollaback",
-      "subtitle": "Peter Castro e Slimcutz",
+      "id": "261128-maquina-culona",
+      "title": "Máquina Culona",
+      "subtitle": "Música urbana e avant-pop espanhola",
       "venue_id": "maus-habitos",
       "venue": "Maus Hábitos",
       "venue_capacity": 150,
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "time": "23:59",
-      "price": "8€",
+      "price": "6€",
       "ticket_url": "",
       "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261127-hollaback/",
+      "url": "https://www.agenda-porto.pt/en/evento/261128-maquina-culona/",
       "intimate": true
     },
     {
@@ -192,6 +177,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/hc-nuki/",
+      "intimate": true
+    },
+    {
+      "id": "torquoise-daniel-catarino",
+      "title": "Torquoise + Daniel Catarino",
+      "subtitle": "Não se Passa Nada às Segundas:",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-12-07",
+      "time": "21:30",
+      "price": "9€ (pré-venda: 7€)",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/torquoise-daniel-catarino/",
       "intimate": true
     },
     {
