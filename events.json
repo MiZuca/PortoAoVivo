@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24T18:26:21Z",
-  "total": 16,
+  "updated_at": "2026-11-25T17:41:05Z",
+  "total": 15,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261124-porta-jazz-apresenta-teresa-costa-marco-coelho",
-      "title": "Porta Jazz apresenta: Teresa Costa + Marco Coelho",
-      "subtitle": "Jazz à Mesa",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-24",
-      "time": "21:00",
-      "price": "",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261124-porta-jazz-apresenta-teresa-costa-marco-coelho/",
-      "intimate": true
-    },
     {
       "id": "swans-live-berlin",
       "title": "Swans Live Berlin, de Marco Porsia e Peter Harton",
@@ -240,18 +225,18 @@
       "intimate": true
     },
     {
-      "id": "rca-cat-soup",
+      "id": "cat-soup-coletivo-obsoleto",
       "title": "Cat Soup",
-      "subtitle": "Concerto",
+      "subtitle": "com a participação especial do Coletivo Obsoleto",
       "venue_id": "rca",
       "venue": "RCA — Radioclube Agramonte",
       "venue_capacity": 200,
       "date": "2026-12-18",
       "time": "22:00",
-      "price": "10€",
+      "price": "12€ (pré-venda: 10€)",
       "ticket_url": "",
       "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-cat-soup/",
+      "url": "https://www.agenda-porto.pt/en/evento/cat-soup-coletivo-obsoleto/",
       "intimate": true
     },
     {
