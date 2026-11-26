@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25T17:41:05Z",
-  "total": 15,
+  "updated_at": "2026-11-26T17:24:17Z",
+  "total": 14,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,21 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "swans-live-berlin",
-      "title": "Swans Live Berlin, de Marco Porsia e Peter Harton",
-      "subtitle": "Exibição de estreia do filme-concerto",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-25",
-      "time": "20:00",
-      "price": "4€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/swans-live-berlin/",
-      "intimate": true
-    },
     {
       "id": "261126-aspirina-besta-nihility",
       "title": "Besta + Nihility",
@@ -225,7 +210,7 @@
       "intimate": true
     },
     {
-      "id": "cat-soup-coletivo-obsoleto",
+      "id": "rca-cat-soup-coletivo-obsoleto",
       "title": "Cat Soup",
       "subtitle": "com a participação especial do Coletivo Obsoleto",
       "venue_id": "rca",
@@ -236,7 +221,7 @@
       "price": "12€ (pré-venda: 10€)",
       "ticket_url": "",
       "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/cat-soup-coletivo-obsoleto/",
+      "url": "https://www.agenda-porto.pt/en/evento/rca-cat-soup-coletivo-obsoleto/",
       "intimate": true
     },
     {
