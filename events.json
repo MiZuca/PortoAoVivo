@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26T17:24:17Z",
-  "total": 14,
+  "updated_at": "2026-11-27T17:02:50Z",
+  "total": 13,
   "venues": {
     "maus-habitos": {
       "name": "Maus Hábitos",
@@ -29,36 +29,6 @@
     }
   },
   "events": [
-    {
-      "id": "261126-aspirina-besta-nihility",
-      "title": "Besta + Nihility",
-      "subtitle": "Aspirina",
-      "venue_id": "maus-habitos",
-      "venue": "Maus Hábitos",
-      "venue_capacity": 150,
-      "date": "2026-11-26",
-      "time": "21:30",
-      "price": "8€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/261126-aspirina-besta-nihility/",
-      "intimate": true
-    },
-    {
-      "id": "rca-maria-bc",
-      "title": "Maria BC",
-      "subtitle": "Concerto",
-      "venue_id": "rca",
-      "venue": "RCA — Radioclube Agramonte",
-      "venue_capacity": 200,
-      "date": "2026-11-26",
-      "time": "22:00",
-      "price": "10€",
-      "ticket_url": "",
-      "type": "",
-      "url": "https://www.agenda-porto.pt/en/evento/rca-maria-bc/",
-      "intimate": true
-    },
     {
       "id": "261127-pcr",
       "title": "PCR",
@@ -177,6 +147,21 @@
       "ticket_url": "",
       "type": "",
       "url": "https://www.agenda-porto.pt/en/evento/torquoise-daniel-catarino/",
+      "intimate": true
+    },
+    {
+      "id": "farewell-transmission-a-celebration-of-jason-molina",
+      "title": "Farewell Transmission: A Celebration of Jason Molina",
+      "subtitle": "Exibição do filme + Entrevista-vídeo com Ben Swanson e Jason Evans Groth",
+      "venue_id": "rca",
+      "venue": "RCA — Radioclube Agramonte",
+      "venue_capacity": 200,
+      "date": "2026-12-11",
+      "time": "21:00",
+      "price": "",
+      "ticket_url": "",
+      "type": "",
+      "url": "https://www.agenda-porto.pt/en/evento/farewell-transmission-a-celebration-of-jason-molina/",
       "intimate": true
     },
     {
